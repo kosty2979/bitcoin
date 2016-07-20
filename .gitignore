@@ -1,3 +1,4 @@
 .sass-cache
-build
+dist
+tmp
 node_modules
