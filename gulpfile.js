@@ -68,7 +68,7 @@ gulp.task('css', ['sass'], function () {
 });
 
 gulp.task('sass', function () {
-   return  gulp.src('src/scss/*.*')
+   return  gulp.src('src/scss/*.scss')
     .pipe(sass().on( 'error', notify.onError(
       {
         message: "<%= error.message %>",

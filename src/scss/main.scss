@@ -1,16 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import "normalize";
+
+ $openSans: "Open sans", 'Arial', sans-serif;
+ $headColor: #3b5566;
+
+ $footerMinColor: #2a3c48;
+ $footerMinHeight: 60px;
+
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 .container-fluid{ 
-	max-width: 1100px;
+	max-width: 1200px;
+
 }
+
+ html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: $footerMinHeight;
+  font-family: $openSans;
+} 
+
+/* ---header----*/
  .header{
-	background-color: #3b5566;
+	background-color: $headColor;
 	padding: 15px 0;
+	color: white;
+	line-height: 2.43;
 	&__img{
 		width: 70%;
 	}	
 }
- 
+.headerBlock{
+	height: 100%;
+	padding: 0;
+	&__img{
+		display: inline-block;
+		vertical-align: text-bottom;
+		margin: 0;
+		background: url(../image/sprite2.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position: 0 0;
+    	width: 18px;
+    	height: 18px;
+    	&--currency{
+    		background-position: -65px 0px;
+    	}
+    	&--currency2{
+    		background-position: -84px 0px;
+    	}
+    	&--in{
+    		background-position: -38px 0px;
+    		width: 26px;
+    	}
+    	&--up{
+    		background-position: -19px 0px;
+    	}	
+	}
+	&__text{
+		display: inline-block;
+		padding: 0  1%;
+		margin: 0;
+		&--menu{
+			padding-top: 4px;
+			padding-right: 4px;
+			text-align: right;
+			width: 100%;
+		}
+	}
+	&__link{
+		color: white;
+		text-decoration: none;
+		&:hover,
+		&:visited {
+			color: white;
+			text-decoration: none;
+		}
+	}
+ }
+/* ----footer-line--- */
+.footerMin {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #cccccc;
+  line-height: $footerMinHeight;
+  background-color: $footerMinColor;
+   &__text{
+  	margin:0;
+  }
+ } 
+
+
