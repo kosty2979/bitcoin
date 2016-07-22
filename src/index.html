@@ -17,6 +17,7 @@
 	
 </head>
 <body>
+<!-- header -->
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">	
@@ -39,7 +40,7 @@
 					<a class="headerBlock__link dropdown-toggle" data-toggle = "dropdown"" href="#">EUR
 						<i class="fa fa-angle-down" aria-hidden="true"></i>
 					</a>
-					 <ul class = "dropdown-menu">
+					 <ul class = "dropdown-menu headerBlock__dropdown">
 				         <li><a href = "#">GBP</a></li>
 				         <li><a href = "#">EUR</a></li>
 				         <li><a href = "#">USD</a></li>
@@ -81,8 +82,43 @@
 			</div>
 		</div>
 	</header>
-
-
+<!-- form sing in -->
+	<div class="container-fluid">
+		<div class="row form">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+				<h2 class="text-center form__head">Already a Member?</h2>
+				 <form role="form" action="#">
+					  <div class="form-group input-group-lg">
+					    <input type="text" class="form-control" required  placeholder="Email/Mobile No." >
+					  </div>
+					  
+					  <button type="submit" class="btn btn-block btn-lg btn-green">SIGN IN</button>
+				</form>
+				<p class="text-center form__text">New member? <a href="#" class="form__link">Sign Up</a></p>
+			</div>
+		</div>
+	</div>
+<!-- aside nav menu -->	
+	<div class="row asideGag hidden">
+		<aside class="col-xs-9 navAside">
+			<ul class="navAside__list">
+			  <li class="navAside__item" ><a class="navAside__link navAside__link--first" href="#"><span aria-hidden="true">&times;</span></a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">Currency:</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">Home</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link1</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link2</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link3</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link4</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#"><p class="navAside__img "></p>Sign In</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#"><p class="navAside__img navAside__img--up"></p>Sign Up</a></li>
+			</ul>
+		</aside>
+	</div>
+<i class="fa fa-twitter" aria-hidden="true"></i>
+<i class="fa fa-google-plus" aria-hidden="true"></i>
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+<i class="fa fa-facebook" aria-hidden="true"></i>
+<!-- footer -->
 	<footer class="footerMin">
 		<div class="container-fluid">
 			<p class="text-center footerMin__text">© 2016 - Jigzo, All right reserved</p>
