@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
+	<title>sing_up</title>
 
 	
 <!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" > -->
@@ -81,27 +81,26 @@
 		</div>
 	</header>
 
-<!-- aside nav menu -->	
-	<!-- <div class="row asideGag hidden">
-		<aside class="col-xs-9 navAside">
-			<ul class="navAside__list">
-			  <li class="navAside__item" ><a class="navAside__link navAside__link--first" href="#"><span aria-hidden="true">&times;</span></a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#">Currency:</a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#">Home</a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#">link1</a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#">link2</a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#">link3</a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#">link4</a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#"><p class="navAside__img "></p>Sign In</a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#"><p class="navAside__img navAside__img--up"></p>Sign Up</a></li>
-			</ul>
-		</aside>
-	</div> -->
-			<!-- <i class="fa fa-twitter" aria-hidden="true"></i>
-			<i class="fa fa-google-plus" aria-hidden="true"></i>
-			<i class="fa fa-linkedin" aria-hidden="true"></i>
-			<i class="fa fa-facebook" aria-hidden="true"></i> -->
-<!-- footer -->
+<!-- form sing up -->
+	<div class="container-fluid ">
+		<div class="row form">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3">
+				<h2 class="text-center form__head">Create New Account</h2>
+				 <form class="form__body" role="form" action="sing_up_otp.html">
+					  <div class="form-group input-group-lg">
+					    <input type="email" class="form-control form__input" required  placeholder="Email" >
+					    <input type="tel" pattern="(\+?\d[- .]*){7,13}"   class="form-control" required  placeholder="Mobile" >
+					  </div>
+					  <button type="submit" class="btn btn-block btn-lg btn-green">SIGN UP</button>
+				</form>
+				<p class="text-center form__text">NOTE: Customers from everywhere in the world can sell Bitcoins to JIGZO.</p>
+				<p class="text-center form__text form__text--black">Verification is currently available for citizen in the following countries:</p>
+				<p class="text-center form__text form__text--grey">Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom</p>
+				<p class="text-center form__text  form__text--last">Already a member? <a href="sing_in.html" class="form__link">Sign In</a></p>
+			</div>
+		</div>
+	</div>
+
 	<footer class="footerMin">
 		<div class="container-fluid">
 			<p class="text-center footerMin__text">© 2016 - Jigzo, All right reserved</p>

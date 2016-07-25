@@ -1,5 +1,4 @@
-
-
+@import "bootstrap.min";
 @import "normalize";
 @import "variables";
 
@@ -134,11 +133,36 @@ body {
 /*-----forms sing in----*/
 	.form{
 		margin: 10% 0;
+		&__body{
+			margin-bottom: 20px;
+		}
 		&__head{
 			padding-bottom: 20px;
+			 color: rgb(28, 28, 28);
+		}
+		&__input{
+			margin-bottom: 15px;
 		}
 		&__text{
-			padding-top: 20px;
+			padding-top: 10px;
+			margin: 0;
+			color: rgb(59, 85, 102);
+ 			line-height: 1.625;
+			&--last{
+				padding-top: 50px;
+			}
+			&--first{
+				padding-bottom: 40px;
+			}
+			&--black{
+				color: rgb(85, 85, 85);
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			&--grey{
+				color: #bbbbbb;
+				font-size: 0.9em;
+			}
 		}
 		&__link{
 			font-weight: 600;
@@ -156,8 +180,10 @@ body {
 	.btn-green{
 		background-color: $green;
 		font-weight: bold;
+		color: rgb(59, 85, 102);
 		&:hover{
 			background-color: $greenHover;
+			color: rgb(59, 85, 102);
 		}
 	}
 /*-----aside nav menu----*/
