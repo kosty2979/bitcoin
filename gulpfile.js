@@ -133,7 +133,19 @@ gulp.task('ftp2', function() {
    }));
 });
 
+gulp.task('ftp', function() {
+ return gulp.src('dist/**/*.*')
+   .pipe(ftp({
+     host: 'workincode.pe.hu',
+     remotePath: '/public_html',
+     port: 21,
+     user: 'u305334178',
+     pass: '29011979'
+   }));
+});
+
 gulp.task('build', gulpsync.sync(['html', 'css',"img","js"]))
 gulp.task('serve', gulpsync.sync(['clean','build','webserver', "watch"]))
 gulp.task('default', gulpsync.sync(['clean', 'build']))
 gulp.task('deploy_zzz', ['ftp2']);
+gulp.task('deploy_incode', ['ftp']);

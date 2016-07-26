@@ -261,59 +261,258 @@ body {
 		z-index: 10;
 	}
 /* ---- section pay system------*/
-.wrapper{
-	margin:0;
-	padding: 0;
-}
-.paySys{
-	text-align: center;
-	&__head{
-		color: rgb(28, 28, 28);
-  		line-height: 1;
-  		margin: 25px 0;
+	.paySys{
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		&__head{
+			color: rgb(28, 28, 28);
+	  		line-height: 1;
+	  		margin: 25px 0;
+		}
+		&__text{
+			line-height: 1.875;
+			color: rgb(85, 85, 85);
+			font-size: 1.2em;
+			margin: 25px 18% 40px;
+		}
+		&__img{
+			display: block;
+			width: 160px;
+			height: 80px;
+			background: url(../image/sprite-paysys.png);
+			background-repeat: no-repeat;
+			background-position: -34px -8px;
+			cursor: pointer;
+			margin: 20px  0;
+			&--pp{
+			background-position: -226px -8px;
+			}
+			&--eps{
+			background-position: -383px -8px;	
+			}
+			&--skrill{
+			background-position: -544px -8px;	
+			}
+			&--amazon{
+			background-position: -737px -8px;	
+			}
+			&--giro{
+			background-position: -27px -114px;
+			}
+			&--nett{
+			background-position: -214px -114px;	
+			}
+			&--soffort{
+			background-position: -378px -114px;	
+			}
+			&--online{
+			background-position: -542px -114px;	
+			}
+			&--okpay{
+			background-position: -742px -114px;	
+			}	
+		}
 	}
-	&__text{
-		line-height: 1.875;
-		color: rgb(85, 85, 85);
-		font-size: 1.2em;
-		margin: 25px 18% 40px;
+/* ---- section currency------*/
+	.currency{
+	  	text-align: center;
+	  	background-image: url(../image/Background_first_sec.png);
+	  	background-size: cover;
+	  	background-position: center center;
+	  	background-repeat: no-repeat;
+	  	padding-top: 4%;
+	  	padding-bottom: 80px;
+		&__head{
+			color: rgb(28, 28, 28);
+	  		font-size: 2.7em;
+	  		font-weight: 600;
+	  		>em{
+	  			font-weight: 400;	
+	  		}
+		}
+		&__text{
+			 color: rgb(85, 85, 85);
+	  		line-height: 1.5;
+	  		font-size: 1.4em;
+	  		padding:  0 5%;
+		}
 	}
-	&__img{
-		display: block;
-		width: 160px;
-		height: 80px;
-		background: url(../image/sprite-paysys.png);
-		background-repeat: no-repeat;
-		background-position: -34px -8px;
-		cursor: pointer;
-		margin: 20px  0;
-		&--pp{
-		background-position: -226px -8px;
+	.card{
+		background-color: $green;
+		border-radius: 10px;
+		box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.2);
+		margin-top: 70px;
+		
+		&__logo{
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 4px;
+			background: url(../image/sprite1.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-position: -54px 0px;
+			width: 55px;
+			height: 80px;
+			&--eth{
+				background-position: -107px 0px;
+			}
+			&--lite{
+				background-position: 5px 0px;
+			}
 		}
-		&--eps{
-		background-position: -383px -8px;	
+		&__line{
+			line-height: 2.3em;
 		}
-		&--skrill{
-		background-position: -544px -8px;	
+		&__name{
+			display: inline-block;
+			vertical-align: baseline;
+	  		color: $headColor;
+	  		font-size: 1.8em;
+	  		font-weight: 600;
+	  		line-height: 2.3em;
+	  		margin-right: 4%;	
 		}
-		&--amazon{
-		background-position: -737px -8px;	
+		&__numb{
+			display: inline-block;
+			vertical-align: baseline;
+			font-weight: bold;
+	  		color: $headColor;
+	  		font-size: 2.3em;
+	  		line-height: 2.3em	
 		}
-		&--giro{
-		background-position: -27px -114px;
+		&__currency{
+			display: inline-block;
+			vertical-align: baseline;
+	  		color: $headColor;
+	  		font-weight: bold;
+	  		font-size: 1.3em;
+	  		line-height: 2.5em
 		}
-		&--nett{
-		background-position: -214px -114px;	
+		&__button{
+			padding-bottom: 15px; 
 		}
-		&--soffort{
-		background-position: -378px -114px;	
+		&__buy{
+			display: inline-block;
+			width: 46%;
+			border-radius: 10px;
+	  		background-color: rgb(255, 255, 255);
+	  		padding-top: 15px;
+	  		padding-bottom: 15px;
+	  		font-weight: bold;
+	  		color: $headColor;
+	  		font-size: 1.7em;
 		}
-		&--online{
-		background-position: -542px -114px;	
+		&__sell{
+			display: inline-block;
+			width: 46%;
+			border-style: solid;
+	  		border-width: 1px;
+	  		border-color: rgb(59, 85, 102);
+	  		border-radius: 10px;
+	  		background-color: rgba(255, 255, 255, 0);
+	  		padding-top: 15px;
+	  		padding-bottom: 15px;
+	  		font-weight: bold;
+	  		color: $headColor;
+	  		font-size: 1.7em;
 		}
-		&--okpay{
-		background-position: -742px -114px;	
-		}	
-	}
-}
 
+	}
+/* ---- section about-----*/
+.about{
+	background-color:$headColor; 
+	padding-top: 60px;
+	text-align: justify;
+	&__form{
+		padding-bottom: 60px;
+	}
+	&__input{
+		background-color:$headColor; 
+		color: rgb(204, 204, 204);
+		border-color: rgb(236, 238, 246);
+	}
+	&__button{
+		background-color:$headColor; 
+		color: white;
+		border-color: rgb(236, 238, 246);
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active  {
+			background-color:$headColorHover ;
+			color: white;
+		}
+	}
+	&__socWrap{
+		text-align: center;
+		padding-bottom: 60px;
+	}
+	&__soc{
+		display: inline-block;
+		color: white;
+		cursor:  pointer;
+		margin-left: 14%;
+		&:first-child{
+			margin-left: 0;
+		}
+		&:hover,
+		&:visited {
+			color: white;
+		}
+	}
+	&__line{
+		border-top: 1px solid rgba(255, 255, 255, 0.25);
+		padding-bottom: 28px;
+	}
+	&__but{
+		text-align: center;
+		padding-bottom: 70px;
+
+	}
+	&__buy{
+		display: inline-block;
+		width: 49%;
+		border-radius: 10px;
+	  	background-color: $green;
+	  	padding-top: 10px;
+	  	padding-bottom: 10px;
+	  	font-weight: bold;
+	  	color: $headColor;
+	  	font-size: 1.5em;
+	}
+	&__sell{
+		display: inline-block;
+		width: 49%;
+		border-style: solid;
+	  	border-width: 1px;
+	  	border-color: white;
+	  	border-radius: 10px;
+	  	background-color: $headColor;
+	  	padding-top: 10px;
+	  	padding-bottom: 10px;
+	  	font-weight: bold;
+	  	color: white;
+	  	font-size: 1.5em;
+	}
+	&__list{
+		text-align: center;
+		padding: 5px;
+		padding-top: 15px;
+	}
+	&__item{
+		display: inline-block;
+		margin-left: 2.5%;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+	&__link{
+		color: white;
+		&:hover,
+		&:visited {
+			color: white;
+		}
+	}
+}
