@@ -13,7 +13,7 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
-
+	<script type="text/javascript" src="js/script.js"></script>
 	
 </head>
 <body>
@@ -37,7 +37,8 @@
 				 <div class="visible-md visible-lg col-md-1 col-lg-1 headerBlock ">
 				<p class="headerBlock__img headerBlock__img--currency"></p>
 				<div class="headerBlock__text dropdown">
-					<a class="headerBlock__link dropdown-toggle" data-toggle = "dropdown" href="#">EUR<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					<a class="headerBlock__link dropdown-toggle" data-toggle = "dropdown" href="#">EUR
+					<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 					 <ul class = "dropdown-menu headerBlock__dropdown">
 				         <li><a href = "#">GBP</a></li>
 				         <li><a href = "#">EUR</a></li>
@@ -71,7 +72,7 @@
 				
 				<div class="col-xs-1 col-sm-1 col-md-1  col-lg-1 headerBlock">
 					<p class="headerBlock__text headerBlock__text--menu">  
-						 <a class="headerBlock__link" href="#">
+						 <a id="menuLink"class="headerBlock__link" href="#">
 						  	<i class="fa fa-bars fa-2x " aria-hidden="true"></i>
 						 </a>
 					</p>
@@ -82,22 +83,67 @@
 	</header>
 
 <!-- aside nav menu -->	
-	<!-- <div class="row asideGag hidden">
+	<div id="menuContent" class="asideGag ">
 		<aside class="col-xs-9 navAside">
 			<ul class="navAside__list">
-			  <li class="navAside__item" ><a class="navAside__link navAside__link--first" href="#"><span aria-hidden="true">&times;</span></a></li>
+			  <li class="navAside__item" ><a  id="closeMenu" class="navAside__link navAside__link--first" href="#"><span aria-hidden="true">&times;</span></a></li>
 			  <li class="navAside__item" ><a class="navAside__link" href="#">Currency:</a></li>
 			  <li class="navAside__item" ><a class="navAside__link" href="#">Home</a></li>
 			  <li class="navAside__item" ><a class="navAside__link" href="#">link1</a></li>
 			  <li class="navAside__item" ><a class="navAside__link" href="#">link2</a></li>
 			  <li class="navAside__item" ><a class="navAside__link" href="#">link3</a></li>
 			  <li class="navAside__item" ><a class="navAside__link" href="#">link4</a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#"><p class="navAside__img "></p>Sign In</a></li>
-			  <li class="navAside__item" ><a class="navAside__link" href="#"><p class="navAside__img navAside__img--up"></p>Sign Up</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_in.html"><p class="navAside__img "></p>Sign In</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_up.html"><p class="navAside__img navAside__img--up"></p>Sign Up</a></li>
 			</ul>
 		</aside>
-	</div> -->
-			<!-- <i class="fa fa-twitter" aria-hidden="true"></i>
+	</div>
+<!-- section pay system -->
+<section class="paySys">
+	<div class="container-fluid ">
+		<div class="row">
+			<h2 class="paySys__head ">Choose between ten amazing payment options.</h2>
+			<p class="paySys__text">24 hours a day, 365 days a year! Buy or Sell your Cryptocoins within seconds! Use Neteller, Skrill, Sofortüberweisung, Giropay, OKPay, PayPal, Sepa, Amazon, and many more...</p>
+
+		</div>
+		<div class="row"> 
+			<div class="col-xs-6 col-sm-offset-2 col-sm-4 col-lg-offset-1 col-lg-2">
+				<a class="paySys__img" href="#"></a>
+			</div>
+			<div class="col-xs-6  col-sm-offset-1 col-sm-4 col-lg-offset-0 col-lg-2">
+				<a class="paySys__img paySys__img--pp" href="#"></a>
+			</div>
+			<div class="col-xs-6 col-sm-offset-2 col-sm-4 col-lg-offset-0 col-lg-2">
+				<a class="paySys__img paySys__img--eps" href="#"></a>
+			</div>
+			<div class="col-xs-6 col-sm-offset-1 col-sm-4 col-lg-offset-0 col-lg-2">
+				<a class="paySys__img paySys__img--skrill" href="#"></a>
+			</div>
+			<div class="col-xs-6 col-sm-offset-2 col-sm-4 col-lg-offset-0 col-lg-2">
+				<a class="paySys__img paySys__img--amazon" href="#"></a>
+			</div>
+
+			<div class="col-xs-6 col-sm-offset-1 col-sm-4 col-lg-offset-1 col-lg-2">
+				<a class="paySys__img paySys__img--giro" href="#"></a>
+			</div>
+			<div class="col-xs-6 col-sm-offset-2 col-sm-4 col-lg-offset-0 col-lg-2">
+				<a class="paySys__img paySys__img--nett" href="#"></a>
+			</div>
+			<div class="col-xs-6 col-sm-offset-1 col-sm-4 col-lg-offset-0 col-lg-2">
+				<a class="paySys__img paySys__img--soffort" href="#"></a>
+			</div>
+			<div class="col-xs-6 col-sm-offset-2 col-sm-4 col-lg-offset-0 col-lg-2">
+				<a class="paySys__img paySys__img--online" href="#"></a>
+			</div>
+			<div class="col-xs-6 col-sm-offset-1 col-sm-4 col-lg-offset-0 col-lg-2">
+				<a class="paySys__img paySys__img--okpay" href="#"></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+	
+		<!-- 	<i class="fa fa-twitter" aria-hidden="true"></i>
 			<i class="fa fa-google-plus" aria-hidden="true"></i>
 			<i class="fa fa-linkedin" aria-hidden="true"></i>
 			<i class="fa fa-facebook" aria-hidden="true"></i> -->
