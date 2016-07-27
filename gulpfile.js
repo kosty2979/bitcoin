@@ -120,7 +120,7 @@ gulp.task('sprite', function() {
     spriteData.css.pipe(gulp.dest('src/scss/'));
 });
 
-gulp.task('clean', del.bind(null, ['tmp', 'dist']));
+gulp.task('clean', del.bind(null, ['tmp', 'dist/*.html', 'dist/css','dist/js','dist/image']));
 
 gulp.task('ftp2', function() {
  return gulp.src('dist/**/*.*')

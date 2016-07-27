@@ -130,11 +130,17 @@ body {
 			margin:0;
 		}
 	} 
-/*-----forms sing in----*/
+/*-----forms sing in-out----*/
 	.form{
 		margin: 10% 0;
 		&__body{
 			margin-bottom: 20px;
+		}
+		&__grey{
+			 border-radius: 10px;
+  			background-color: rgb(249, 249, 249);
+  			padding: 40px 15%;
+  			margin-bottom: 20px;
 		}
 		&__head{
 			padding-bottom: 20px;
@@ -148,9 +154,6 @@ body {
 			margin: 0;
 			color: rgb(59, 85, 102);
  			line-height: 1.625;
-			&--last{
-				padding-top: 50px;
-			}
 			&--first{
 				padding-bottom: 40px;
 			}
@@ -207,6 +210,7 @@ body {
 			}
 			&:last-child{
 				border-bottom: 2px solid $headColor;
+				padding-top: 35px;
 			}
 			&:hover{
 				background-color: $headColorHover;
@@ -284,7 +288,7 @@ body {
 			background-repeat: no-repeat;
 			background-position: -34px -8px;
 			cursor: pointer;
-			margin: 20px  0;
+			margin: 20px  auto;
 			&--pp{
 			background-position: -226px -8px;
 			}
@@ -314,6 +318,79 @@ body {
 			}	
 		}
 	}
+/* ---- section last news------*/
+.lastNews{
+	background-color: #f9f9f9;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	&__head{
+		color: rgb(28, 28, 28);
+	}
+	&__link{
+		display:inline-block;
+		border-style: solid;
+  		border-width: 1px;
+  		border-color: rgb(204, 204, 204);
+ 		background-color: rgb(249, 249, 249);
+		color: rgb(178, 178, 178);
+  		line-height: 1.357;
+  		text-decoration: none;
+  		padding: 5px 15px;
+  		margin-top: 20px;
+  		&:visited{
+  			text-decoration: none;
+  			color: rgb(178, 178, 178);
+  		}
+  		&:hover{
+  			text-decoration: none;
+  			color: grey;
+  		}
+	}
+}
+.news{
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+  	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  	margin-top: 36px;
+  	margin-bottom: 36px;
+  	display:block;
+  	text-decoration: none;
+  	cursor: pointer;
+  	&:hover,
+  	&:visited{
+  		text-decoration: none;
+  	}
+  	&__imgWrap{
+  		border-top-left-radius:10px;
+  		border-top-right-radius:10px;
+ 		max-height: 180px;
+ 		overflow: hidden;
+  	}
+  	&__img{
+  		width:100%;
+  		background-size: cover;
+  		background-position:  center center;
+	}
+	&__head{
+		color: rgb(28, 28, 28);
+  		line-height: 1.5;
+  		font-size: 1.4em;
+  		padding: 0 9%;
+	}
+	&__text{
+		line-height: 2.143;
+		color: rgb(28, 28, 28);
+		font-size: 1em;
+		>span{
+		vertical-align: top;	
+		}
+	}
+	&__icon{
+		font-size: 1em;
+		line-height: 2.143;
+	}
+
+}
 /* ---- section currency------*/
 	.currency{
 	  	text-align: center;
@@ -321,8 +398,8 @@ body {
 	  	background-size: cover;
 	  	background-position: center center;
 	  	background-repeat: no-repeat;
-	  	padding-top: 4%;
-	  	padding-bottom: 80px;
+	  	padding-top: 60px;
+	  	padding-bottom: 90px;
 		&__head{
 			color: rgb(28, 28, 28);
 	  		font-size: 2.7em;
@@ -420,99 +497,134 @@ body {
 		}
 
 	}
+/* ---section text-block----- */
+	.textBlockWrap{
+		margin-bottom: 66px;
+		margin-top: 60px;
+	}
+	.textBlock{
+		text-align: center;
+		&__img{
+			display: inline-block;
+			background: url(../image/sprite-textsec.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-position: 3px 0px;
+			width: 120px;
+			height: 130px;
+			margin-bottom: 0;
+			&--clock{
+				background-position: -109px 0px;
+			}
+			&--plane{
+				background-position: -217px 0px;
+			}
+		}
+		&__head{
+			color: rgb(28, 28, 28);
+	  		font-weight: bold;
+	  		margin-top:0;
+		}
+		&__text{
+			color: rgb(85, 85, 85);
+			padding: 10px 35px;
+			font-size: 1.2em;
+		}
+	}
 /* ---- section about-----*/
-.about{
-	background-color:$headColor; 
-	padding-top: 60px;
-	text-align: justify;
-	&__form{
-		padding-bottom: 60px;
-	}
-	&__input{
+	.about{
 		background-color:$headColor; 
-		color: rgb(204, 204, 204);
-		border-color: rgb(236, 238, 246);
-	}
-	&__button{
-		background-color:$headColor; 
-		color: white;
-		border-color: rgb(236, 238, 246);
-		&:hover,
-		&:visited,
-		&:focus,
-		&:active  {
-			background-color:$headColorHover ;
+		padding-top: 60px;
+		text-align: justify;
+		&__form{
+			padding-bottom: 60px;
+		}
+		&__input{
+			background-color:$headColor; 
+			color: rgb(204, 204, 204);
+			border-color: rgb(236, 238, 246);
+		}
+		&__button{
+			background-color:$headColor; 
 			color: white;
+			border-color: rgb(236, 238, 246);
+			&:hover,
+			&:visited,
+			&:focus,
+			&:active  {
+				background-color:$headColorHover ;
+				color: white;
+			}
 		}
-	}
-	&__socWrap{
-		text-align: center;
-		padding-bottom: 60px;
-	}
-	&__soc{
-		display: inline-block;
-		color: white;
-		cursor:  pointer;
-		margin-left: 14%;
-		&:first-child{
-			margin-left: 0;
+		&__socWrap{
+			text-align: center;
+			padding-bottom: 60px;
 		}
-		&:hover,
-		&:visited {
+		&__soc{
+			display: inline-block;
 			color: white;
+			cursor:  pointer;
+			margin-left: 14%;
+			&:first-child{
+				margin-left: 0;
+			}
+			&:hover,
+			&:visited {
+				color: white;
+			}
 		}
-	}
-	&__line{
-		border-top: 1px solid rgba(255, 255, 255, 0.25);
-		padding-bottom: 28px;
-	}
-	&__but{
-		text-align: center;
-		padding-bottom: 70px;
+		&__line{
+			border-top: 1px solid rgba(255, 255, 255, 0.25);
+			padding-bottom: 28px;
+		}
+		&__but{
+			text-align: center;
+			padding-bottom: 70px;
 
-	}
-	&__buy{
-		display: inline-block;
-		width: 49%;
-		border-radius: 10px;
-	  	background-color: $green;
-	  	padding-top: 10px;
-	  	padding-bottom: 10px;
-	  	font-weight: bold;
-	  	color: $headColor;
-	  	font-size: 1.5em;
-	}
-	&__sell{
-		display: inline-block;
-		width: 49%;
-		border-style: solid;
-	  	border-width: 1px;
-	  	border-color: white;
-	  	border-radius: 10px;
-	  	background-color: $headColor;
-	  	padding-top: 10px;
-	  	padding-bottom: 10px;
-	  	font-weight: bold;
-	  	color: white;
-	  	font-size: 1.5em;
-	}
-	&__list{
-		text-align: center;
-		padding: 5px;
-		padding-top: 15px;
-	}
-	&__item{
-		display: inline-block;
-		margin-left: 2.5%;
-		&:first-child{
-			margin-left: 0;
 		}
-	}
-	&__link{
-		color: white;
-		&:hover,
-		&:visited {
+		&__buy{
+			display: inline-block;
+			width: 49%;
+			border-radius: 10px;
+		  	background-color: $green;
+		  	padding-top: 10px;
+		  	padding-bottom: 10px;
+		  	font-weight: bold;
+		  	color: $headColor;
+		  	font-size: 1.5em;
+		}
+		&__sell{
+			display: inline-block;
+			width: 49%;
+			border-style: solid;
+		  	border-width: 1px;
+		  	border-color: white;
+		  	border-radius: 10px;
+		  	background-color: $headColor;
+		  	padding-top: 10px;
+		  	padding-bottom: 10px;
+		  	font-weight: bold;
+		  	color: white;
+		  	font-size: 1.5em;
+		}
+		&__list{
+			text-align: center;
+			padding: 5px;
+			padding-top: 15px;
+		}
+		&__item{
+			display: inline-block;
+			margin-left: 2.5%;
+			&:first-child{
+				margin-left: 0;
+			}
+		}
+		&__link{
 			color: white;
+			&:hover,
+			&:visited {
+				color: white;
+			}
 		}
 	}
-}
