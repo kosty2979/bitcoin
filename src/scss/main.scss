@@ -562,8 +562,7 @@ body {
 			text-decoration: none;
 			}
 		}
-	}
-	
+	}	
 /* ---- section currency------*/
 	.currency{
 	  	text-align: center;
@@ -692,7 +691,7 @@ body {
 		}
 
 	}
-/* ---section text-block----- */
+/*----section text-block----- */
 	.textBlockWrap{
 		margin-bottom: 66px;
 		margin-top: 60px;
@@ -727,7 +726,7 @@ body {
 			font-size: 1.2em;
 		}
 	}
-/* ---- section about-----*/
+/*----section about-----*/
 	.about{
 		background-color:$headColor; 
 		padding-top: 60px;
@@ -846,7 +845,7 @@ body {
   			text-align: justify;
 		}
 	}
-/* -- section  aboutUs --- */
+/*----section  aboutUs --- */
 	.aboutUs{
 		&__wrap{
 			margin-bottom: 85px;
@@ -910,11 +909,197 @@ body {
 			font-size: 1.2em;
 			font-weight: 400;
 			line-height: 1.3;
-			&--inline{
-
-			}
 
 		}
 	}
+/* ----section  contactUs --- */
+	.contactUs{
+		&__wrap{
+			margin-top: 85px;
+			margin-bottom: 85px;
+			border-radius: 10px;
+  			background-color: rgb(249, 249, 249);
+  			padding:15px;
+		}
+		&__name{
+			text-align: center;
+			font-size: 2.1em;
+  			font-family: "Open Sans";
+  			color: rgb(28, 28, 28);
+  			line-height: 1;
+  			margin-top: 65px;
+  			margin-bottom: 65px;
+		}
+		&__mapWrap{
+			height: 300px; 
+			border-radius: 10px;
+  			background-color: rgb(255, 255, 255);
+  			box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  			margin-bottom: 65px;
+		}
+		&__textWrap{
+			margin-bottom: 40px;
+		}
+		&__textName{
+			font-weight: 600;
+			color: #1c1c1c;
+			font-size: 1.2em;
+			line-height: 1.3;
+			&--big{
+				font-size: 1.8em;
+			}
+			
+		}
+		&__textGrey{
+			color: rgb(182, 182, 182);
+			font-size: 1.2em;
+			//font-weight: 400;
+			line-height: 1.3;
+			>a{
+				color: $green;
+				text-decoration: none;
+				display: inline-block;
+				&:hover{
+					color: $greenHover;
+					text-decoration: none;
+				}
+			}
+			>span{
+				font-size: 1em;
+			}
+		}
+		&__form{
+			margin-top: 65px;
+			margin-bottom: 25px;
+		}
+		&__input{
+			margin-bottom:  15px;
+		}
+		&__textArea{
+			margin-bottom:  15px;
+			resize: none
+		}
+	}
+/* ---- section pay options------*/
+	.payOpt{
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background-color: rgb(249, 249, 249);
+		&__wrap{
+			 border-radius: 10px;
+  			background-color: rgb(255, 255, 255);
+  			box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  			overflow: hidden;
+  			margin-top: 25px;
+  			margin-bottom: 25px;
+		}
+		&__head{
+			color: rgb(28, 28, 28);
+	  		line-height: 1;
+	  		margin: 25px 0px;
+		}
+		&__imgWrap{
+			background-color: rgb(255, 255, 255);
+			box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.15);
+			padding-top: 20px;
+			padding-bottom: 20px; 
+		}
+		&__img{
+			display: block;
+			width: 160px;
+			height: 80px;
+			background: url(../image/sprite-paysys.png);
+			background-repeat: no-repeat;
+			background-position: -34px -8px;
+			cursor: pointer;
+			margin: 0px  auto;
+			&--pp{
+			background-position: -226px -8px;
+			}
+			&--eps{
+			background-position: -383px -8px;	
+			}
+			&--skrill{
+			background-position: -544px -8px;	
+			}
+			&--amazon{
+			background-position: -737px -8px;	
+			}
+			&--giro{
+			background-position: -27px -114px;
+			}
+			&--nett{
+			background-position: -214px -114px;	
+			}
+			&--soffort{
+			background-position: -378px -114px;	
+			}
+			&--online{
+			background-position: -542px -114px;	
+			}
+			&--okpay{
+			background-position: -742px -114px;	
+			}	
+		}
+		&__textWrap{
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+		&__text{
+			color: rgb(28, 28, 28);
+  			line-height: 1.6;
+  			font-size: 1.1em;
+  			text-align: center;
+		}
+	}
+/* ---- section FAQ------*/
+	.faq{
+		&__head{
+			text-align: center;
+			color: rgb(28, 28, 28);
+  			line-height: 1;
+  			font-size: 2.1em;
+  			padding-top: 25px;
+  			padding-bottom: 25px;
+		}
+		&__line{
+			background-color: rgb(217, 217, 217);
+  			height: 1px;
+  			margin: 25px 15px ;
+		}
+	}
+	.accord{
+		&__wrap{
+			border-style: solid;
+  			border-width: 1px;
+  			border-color: rgb(85, 85, 85);
+  			border-radius: 10px !important;
+  			background-color: rgba(255, 255, 255, 0);
+  			margin-bottom: 15px !important;
+		}
+		&__head{
+			text-align: center;
+			color: rgb(28, 28, 28);
+  			line-height: 1.5;
+  			font-size: 1.4em;
+  			padding-bottom: 25px;
+  			&--left{
+  				text-align: left;
+  			}
+		}
+		&__name{
+			color: rgb(85, 85, 85);
+  			line-height: 1.875;
+  			font-size: 1.2em;
+		}
+		&__text{
+			border-top: none !important;
+			color: rgb(161, 161, 161);
+  			line-height: 1.625;
+		}
+		&__ind{
+			  line-height: 1.875;
+		}
+	}
 
-#mapid { height: 200px; }
+	

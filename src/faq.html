@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FAQ</title>
+
+	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body>
+<!-- header -->
+	<header class="header">
+		<div class="container-fluid">
+			<div class="row">	
+				<div class="header__logo col-xs-6 col-sm-3 col-md-2 col-lg-2">
+					<a href="index.html"><img class="header__img"src="image/Logo_header.png" alt="logo"></a>
+				</div>
+
+				<div class="col-xs-4 col-xs-offset-1 col-sm-2 col-sm-offset-6 col-md-offset-0 col-md-2  col-lg-1 headerBlock">
+				<p class="headerBlock__img"></p>
+				<p class="headerBlock__text">
+					<a class="headerBlock__link" href="#">English
+					 <i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</p>
+				</div>
+
+				 <div class="visible-md visible-lg col-md-1 col-lg-1 headerBlock ">
+				<p class="headerBlock__img headerBlock__img--currency"></p>
+				<div class="headerBlock__text dropdown">
+					<a class="headerBlock__link dropdown-toggle" data-toggle = "dropdown" href="#">EUR
+					<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					 <ul class = "dropdown-menu headerBlock__dropdown">
+				         <li><a href = "#">GBP</a></li>
+				         <li><a href = "#">EUR</a></li>
+				         <li><a href = "#">USD</a></li>
+				    </ul>
+				</div>
+				</div>
+				
+				<div class=" visible-lg  col-lg-1 headerBlock">
+				<p class="headerBlock__img headerBlock__img--currency2"></p>
+				<p class="headerBlock__text">
+					<a class="headerBlock__link" href="#">Bitcoins
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</p>
+				</div>
+				
+				<div class="visible-md visible-lg col-md-1 col-md-offset-4 col-lg-offset-4 col-lg-1 headerBlock">
+				<p class="headerBlock__img headerBlock__img--in"></p>
+				<p class="headerBlock__text">
+					<a class="headerBlock__link" href="sing_in.html">Sign In</a>
+				</p>
+				</div>
+				
+				<div class="visible-md visible-lg col-md-1 col-lg-1 headerBlock">
+				<p class="headerBlock__img headerBlock__img--up"></p>
+				<p class="headerBlock__text">
+					<a class="headerBlock__link" href="sing_up.html">Sign Up</a>
+				</p>
+				</div>
+				
+				<div class="col-xs-1 col-sm-1 col-md-1  col-lg-1 headerBlock">
+					<p class="headerBlock__text headerBlock__text--menu">  
+						 <a id="menuLink" class="headerBlock__link" href="#">
+						  	<i class="fa fa-bars fa-2x " aria-hidden="true"></i>
+						 </a>
+					</p>
+				</div> 
+
+			</div>
+		</div>
+	</header>
+
+<!-- aside nav menu -->	
+	<div id="menuContent" class="asideGag ">
+		<aside class="col-xs-9 navAside">
+			<ul class="navAside__list">
+			  <li class="navAside__item" ><a  id="closeMenu" class="navAside__link navAside__link--first" href="#"><span aria-hidden="true">&times;</span></a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">Currency:</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">Home</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link1</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link2</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link3</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link4</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_in.html"><p class="navAside__img "></p>Sign In</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_up.html"><p class="navAside__img navAside__img--up"></p>Sign Up</a></li>
+			  <li class="navAside__item" ></li>
+			</ul>
+		</aside>
+	</div>
+
+<!-- section faq -->
+	<section class="faq">
+		<div class="container-fluid ">
+			
+			<div class="row">
+				
+					<h2 class="faq__head ">Frequently Asked Questions</h2>
+				
+			</div>
+			
+			<div class="row"> 
+				<!-- accord 1 -->
+				<div class="panel-group accord col-lg-6 col-lg-offset-3" id="accord1"> 
+
+					<h3 class="accord__head ">Common Questions</h3>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord1" href="#accord1__1">How long does it take until the Bitcoins show up in my address?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>	
+						<div id="accord1__1" class="panel-collapse collapse ">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord1" href="#accord1__2">What Payment Methods do you guys offer?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord1__2" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading ">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord1" href="#accord1__3">When do I get my money?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord1__3" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+						<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord1" href="#accord1__4">Do you guys accept Credit Cards or Paysafe Cards?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>	
+						<div id="accord1__4" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord1" href="#accord1__5">I do not have a Bitcoin address yet. How can I get one?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord1__5" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading ">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord1" href="#accord1__6">What coins do you offer on your Site?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord1__6" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord1" href="#accord1__7">What is a mining fee? Do I have to add it?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>	
+						<div id="accord1__7" class="panel-collapse collapse  ">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord1" href="#accord1__8">Overview: Verification Levels</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord1__8" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading ">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord1" href="#accord1__9">What Data and Documents do you need for the Verification?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord1__9" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- line -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="col-lg-12 faq__line "></div>
+					</div>
+				 </div>
+				<!-- accord 2 -->
+				<div class="panel-group accord col-lg-6 " id="accord2"> 
+
+					<h3 class="accord__head  accord__head--left">Buy Bitcoins</h3>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord2" href="#accord2__1">What Data and Documents do you need for the Verification?</a><i class="accord__ind fa fa-chevron-up pull-right" aria-hidden="true"></i></h4>
+						</div>	
+						<div id="accord2__1" class="panel-collapse collapse in">
+							<div class="panel-body accord__text">Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord2" href="#accord2__2">What Payment Methods do you guys offer?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord2__2" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading ">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord2" href="#accord2__3">How long does it take until the Bitcoins show up in my address?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord2__3" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+						<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord2" href="#accord2__4">How do you guys determine the "Buy"-price?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>	
+						<div id="accord2__4" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord2" href="#accord2__5">What coins do you offer on your Site?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord2__5" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading ">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord2" href="#accord2__6">What information do you need from me,  if I want to buy coins?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord2__6" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord2" href="#accord2__7">Do you guys accept Credit Cards or Paysafe Cards?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord2__7" class="panel-collapse collapse  ">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- accord 3 -->
+				<div class="panel-group accord col-lg-6 " id="accord3"> 
+
+					<h3 class="accord__head  accord__head--left">Sell Bitcoins</h3>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord3" href="#accord3__1">How to sell Bitcoin?</a><i class="accord__ind fa fa-chevron-up pull-right" aria-hidden="true"></i></h4>
+						</div>	
+						<div id="accord3__1" class="panel-collapse collapse in">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord3" href="#accord3__2">When do I get my money?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord3__2" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading ">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord3" href="#accord3__3">How do you guys determine the "Sell"-price?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord3__3" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+
+					<div class="panel accord__wrap">
+						<div class="panel-heading ">
+							<h4 class="panel-title accord__name"><a data-toggle="collapse" data-parent="#accord3" href="#accord3__4">What is a mining fee? Do I have to add it?</a><i class="accord__ind fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+						</div>
+						<div id="accord3__4" class="panel-collapse collapse">
+							<div class="panel-body accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+<!-- section about -->
+	<section class="about">
+		<div class="container-fluid">
+			<div class="row">
+				<div class=" col-sm-6 col-md-5   col-lg-4">
+	    				<form class="input-group about__form" action="#">
+	      					<input type="email" class="form-control input-lg about__input"  required  placeholder="Enter your email address">
+	      					<span class="input-group-btn">
+	        					<button class="btn btn-lg btn-default about__button" type="submit" >SUBSCRIBE</button>
+	      					</span>
+	    				</form>
+	 			 </div>
+	 			 <div class=" col-sm-6 col-md-5 col-md-offset-2 col-lg-offset-4 col-lg-4 about__socWrap">
+		 			 
+						<a class="about__soc" href="#"><i class="fa fa-facebook fa-3x " aria-hidden="true"></i></a>
+			 			<a class="about__soc" href="#"><i class="fa fa-twitter fa-3x " aria-hidden="true"></i></a>
+						<a class="about__soc" href="#"><i class="fa fa-linkedin fa-3x " aria-hidden="true"></i></a>
+						<a class="about__soc" href="#"><i class="fa fa-google-plus fa-3x " aria-hidden="true"></i></a>
+					
+				</div>
+			</div>
+			<div class="row  hidden-xs  about__line"></div>
+			<div class="row ">
+				 <div class="col-sm-6 col-md-5 col-lg-4 about__but">
+					<p class="about__buy">BUY</p>
+					<p class="about__sell">SELL</p>
+				</div>
+				<ul class="col-sm-6 col-md-5 col-md-offset-2 col-lg-offset-4 col-lg-4 about__list">
+					<li class="about__item"><a class="about__link" href="about_us.html">About Us</a> </li>
+					<li class="about__item"><a class="about__link" href="about_us.html#imprint">Imprint</a> </li>
+					<li class="about__item"><a class="about__link" href="terms.html">Terms and Conditions</a> </li>
+					<li class="about__item"><a class="about__link" href="contact_us.html">Contact us</a> </li>
+				</ul>					
+			</div>		
+		</div>
+	</section>			
+<!-- footer -->
+	<footer class="footerMin">
+		<div class="container-fluid">
+			<p class="text-center footerMin__text">© 2016 - Jigzo, All right reserved</p>
+		</div>
+	</footer>
+</body>
+</html>

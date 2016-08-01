@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
+	<title>Contact_us</title>
 
 	
 
@@ -105,18 +105,69 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-offset-1 col-lg-10 ">	
-					<h2 class="contactUs__name">About Us</h2>
 					<div class="contactUs__wrap">
-						<p class="contactUs__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
-						</p>
-						<p class="contactUs__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
-						</p>
+					<h2 class="contactUs__name">Contact Us</h2>
+						<div class="row">
+							<div class="hidden-xs col-sm-5 col-sm-offset-1">
+								<div class="contactUs__textWrap">
+									<p class="contactUs__textName contactUs__textName--big">JIGZO GmbH</p>
+									<p class="contactUs__textGrey">Langenhorner Chaussee 600</p>
+									<p class="contactUs__textGrey">22419 Hamburg</p>
+									<p class="contactUs__textGrey">Germany </p>
+								</div>
+								<div class="contactUs__textWrap">
+									<p class="contactUs__textName">Contact:</p>
+									<p class="contactUs__textGrey">E-Mail: <a href="mailto:office@Jigzocom">office@Jigzocom</a></p>
+									<p class="contactUs__textGrey ">Phone: 
+										<span class="contactUs__textGrey">0800 3905 000</span>
+									</p>
+								</div>
+							</div>	
+
+							<div class="col-xs-12 col-sm-5 ">
+								<div id="mapid" class="contactUs__mapWrap"></div>		
+							</div>
+
+							<div class="col-xs-12 hidden-sm hidden-md hidden-lg col-sm-5 col-sm-offset-1 text-center">
+								<div class="contactUs__textWrap">
+									<p class="contactUs__textName contactUs__textName--big">JIGZO GmbH</p>
+									<p class="contactUs__textGrey">Langenhorner Chaussee 600</p>
+									<p class="contactUs__textGrey">22419 Hamburg</p>
+									<p class="contactUs__textGrey">Germany </p>
+								</div>
+								<div class="contactUs__textWrap">
+									<p class="contactUs__textName">Contact:</p>
+									<p class="contactUs__textGrey">E-Mail: <a href="mailto:office@Jigzocom">office@Jigzocom</a></p>
+									<p class="contactUs__textGrey ">Phone: 
+										<span class="contactUs__textGrey">0800 3905 000</span>
+									</p>
+								</div>
+							</div>	
+					 	</div>
+					 	<div class="row">
+						 	<form class="contactUs__form" role="form" action="#">
+						 		<div class="form-group form-group-lg">
+								 	<div class="col-sm-5 col-sm-offset-1 ">
+										<input type="text" class="form-control contactUs__input" required  placeholder="Full name" >	  
+									</div>
+
+									<div class="col-sm-5 ">
+										<input type="email" class="form-control contactUs__input" required  placeholder="Email" >
+									</div>
+
+									<div class="col-sm-10 col-sm-offset-1 ">
+										 <input type="text" class="form-control contactUs__input" required  placeholder="Subject" >
+										<textarea class="form-control contactUs__textArea" rows="6" required placeholder="Message"></textarea>	
+									</div>
+
+									<div class="col-sm-4 col-sm-offset-4 ">
+										<button type="submit" class="btn btn-block btn-lg btn-green contactUs__input">SUBMIT</button>
+									</div>
+								</div>
+							</form>	
+						</div>
 					</div>
 
-					 <div id="mapid"></div>
-					
 				</div>			
 			</div>
 		</div><!-- end container-fluid -->
@@ -152,7 +203,7 @@
 					<li class="about__item"><a class="about__link" href="about_us.html">About Us</a> </li>
 					<li class="about__item"><a class="about__link" href="about_us.html#imprint">Imprint</a> </li>
 					<li class="about__item"><a class="about__link" href="terms.html">Terms and Conditions</a> </li>
-					<li class="about__item"><a class="about__link" href="#">Contact us</a> </li>
+					<li class="about__item"><a class="about__link" href="contact_us.html">Contact us</a> </li>
 				</ul>					
 			</div>		
 		</div>
@@ -163,5 +214,8 @@
 			<p class="text-center footerMin__text">© 2016 - Jigzo, All right reserved</p>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		contactMap();
+	</script>
 </body>
 </html>
