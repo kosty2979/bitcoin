@@ -1097,9 +1097,115 @@ body {
 			color: rgb(161, 161, 161);
   			line-height: 1.625;
 		}
+		&__link{
+			display: inline-block;
+			width:93%;
+		}
 		&__ind{
-			  line-height: 1.875;
+			vertical-align: bottom;
+			width:5%;
+			line-height: 1.875;
 		}
 	}
 
 	
+/* ----dash board--- */
+	.dash{
+		&__wrap{
+			border-radius: 10px;
+  			background-color: rgb(249, 249, 249);
+  			margin-top: 85px;
+		}
+		&__navWrap{
+		}
+		&__nav{
+			border-radius:0;
+			border-color: transparent;
+			border-radius-top-left: 10px;
+			border-radius-top-right: 10px;
+			border-bottom: 1px solid white;	
+			margin-left: -15px;
+			margin-right: -15px;
+			margin-top: 7px;
+	
+		}
+		&__navList{
+			margin-left: -15px;
+		}
+		&__navLink{
+			color: rgb(182, 182, 182);
+  			line-height: 2.125;
+  			font-size: 1.2em;
+			border-bottom: 4px solid transparent;
+			padding-bottom:  22px;
+			padding: 15px 25px;
+			min-width: 80px;
+			text-align: center;
+			&:hover{
+				color: rgb(59, 85, 102) !important;
+			}
+			&.active{
+				color: rgb(59, 85, 102) !important;
+				border-bottom: 4px solid rgb(59, 85, 102);
+			}	
+		}
+		&__toggle{
+			width:91.5%;
+
+			
+		}
+	}
+
+/* ----section headLine dash board--- */
+	.headLine{
+		&__name{
+			 font-size: 2.2em;
+  			color: rgb(28, 28, 28);
+  			line-height: 1;
+		}
+		&__text{
+			color: rgb(85, 85, 85);
+  			line-height: 1.625;
+  			font-size: 1.2em;
+  			padding-top: 30px;
+		}
+		&__btn{
+			margin-top: 40px;
+			text-transform: uppercase;
+			font-size: 1.4em;
+			 line-height: 1.7;
+		}
+	}
+/* ----section accLimit dash board--- */
+	.accLimit{
+		&__wrap{
+			 border-radius: 10px;
+ 			 background-color: rgb(255, 255, 255);
+		}
+		&__name{
+			 font-size: 2.2em;
+  			color: rgb(28, 28, 28);
+  			line-height: 1;
+  			padding-top: 35px;
+  			padding-bottom: 35px;
+  			padding-left: 15px;
+  			border-bottom: 1px solid rgb(241, 241, 241);
+  			margin-bottom: 0px;
+		}
+		&__list{
+			border-bottom: 1px solid rgb(241, 241, 241);
+		}
+		&__item{
+			>a{
+			line-height: 2.12em !important;
+			border-bottom: 1px solid transparent;
+			  color: rgb(59, 85, 102);
+			  font-size: 1.2em;
+			  background-color: #f9f9f9;
+			  &:hover{
+			  	color: rgb(59, 85, 102);
+			  }	
+			}
+		}
+		
+	}
