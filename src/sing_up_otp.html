@@ -15,69 +15,121 @@
 	
 </head>
 <body>
-<!-- header -->
-	<header class="header">
+<!--header-> -->
+	<nav class="navbar navbar-default headNav" role="navigation">
 		<div class="container-fluid">
-			<div class="row">	
-				<div class="header__logo col-xs-6 col-sm-3 col-md-2 col-lg-2">
-					<a href="index.html"><img class="header__img"src="image/Logo_header.png" alt="logo"></a>
-				</div>
 
-				<div class="col-xs-4 col-xs-offset-1 col-sm-2 col-sm-offset-6 col-md-offset-0 col-md-2  col-lg-1 headerBlock">
-				<p class="headerBlock__img"></p>
-				<p class="headerBlock__text">
-					<a class="headerBlock__link" href="#">English
-					 <i class="fa fa-angle-down" aria-hidden="true"></i>
-					</a>
-				</p>
-				</div>
+			<a class="navbar-brand headNav__logo" href="index.html">
+				<img class="headNav__logoImg" src="image/Logo_header.png">
+			</a>
 
-				 <div class="visible-md visible-lg col-md-1 col-lg-1 headerBlock ">
-				<p class="headerBlock__img headerBlock__img--currency"></p>
-				<div class="headerBlock__text dropdown">
-					<a class="headerBlock__link dropdown-toggle" data-toggle = "dropdown" href="#">EUR<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-					 <ul class = "dropdown-menu headerBlock__dropdown">
-				         <li><a href = "#">GBP</a></li>
-				         <li><a href = "#">EUR</a></li>
-				         <li><a href = "#">USD</a></li>
-				    </ul>
-				</div>
-				</div>
-				
-				<div class=" visible-lg  col-lg-1 headerBlock">
-				<p class="headerBlock__img headerBlock__img--currency2"></p>
-				<p class="headerBlock__text">
-					<a class="headerBlock__link" href="#">Bitcoins
+			<ul class="nav navbar-nav hidden-xs ">
+				<li class="dropdown ">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img"></p>
+						English
 						<i class="fa fa-angle-down" aria-hidden="true"></i>
 					</a>
-				</p>
-				</div>
-				
-				<div class="visible-md visible-lg col-md-1 col-md-offset-4 col-lg-offset-4 col-lg-1 headerBlock">
-				<p class="headerBlock__img headerBlock__img--in"></p>
-				<p class="headerBlock__text">
-					<a class="headerBlock__link" href="sing_in.html">Sign In</a>
-				</p>
-				</div>
-				
-				<div class="visible-md visible-lg col-md-1 col-lg-1 headerBlock">
-				<p class="headerBlock__img headerBlock__img--up"></p>
-				<p class="headerBlock__text">
-					<a class="headerBlock__link" href="sing_up.html">Sign Up</a>
-				</p>
-				</div>
-				
-				<div class="col-xs-1 col-sm-1 col-md-1  col-lg-1 headerBlock">
-					<p class="headerBlock__text headerBlock__text--menu">  
-						 <a class="headerBlock__link" href="#">
-						  	<i class="fa fa-bars fa-2x " aria-hidden="true"></i>
-						 </a>
-					</p>
-				</div> 
+					<ul class = "dropdown-menu headNav__dropdown">
+						<li><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+					</ul>
+				</li>
+				<li class="hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link" href="#">
+						<p class="headNav__img headNav__img--currency2"></p>
+						Bitcoins
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="dropdown ">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img headNav__img--currency"></p>
+						EUR
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown">
+						<li><a href = "#">GBP</a></li>
+						<li><a href = "#">EUR</a></li>
+						<li><a href = "#">USD</a></li>
+					</ul>
+				</li>	
+			</ul>
 
-			</div>
-		</div>
-	</header>
+			<ul class="nav   myNavRight">
+				<li>
+					<a id="menuLink" class="headNav__link headNav__link--2" href="#">
+						<i class="fa fa-bars fa-2x " aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="dropdown  hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img headNav__img--currency"></p>EUR
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown--right">
+						<li><a href = "#">GBP</a></li>
+						<li><a href = "#">EUR</a></li>
+						<li><a href = "#">USD</a></li>
+					</ul>
+				</li>
+				<li class="dropdown hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img"></p>
+						English
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown--right">
+						<li class="dropBlock"><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+					</ul>
+				</li>
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link" href="index.html">
+						<p class="headNav__img headNav__img--out"></p>
+						Sign Out
+					</a>
+				</li>
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link" href="dashboard.html">
+						<p class="headNav__img headNav__img--dash"></p>
+						Dashboard	
+					</a>
+				</li>
+				<li class="hidden-xs ">
+					<a class="headNav__link" href="sing_up.html">
+						<p class="headNav__img headNav__img--up"></p>
+						Sign Up
+					</a>
+				</li>
+				<li class="hidden-xs">
+					<a class="headNav__link" href="sing_in.html">
+						<p class="headNav__img headNav__img--in"></p>
+						Sign In
+					</a>
+				</li>
+			</ul>
+		</div><!-- /.container-fluid -->
+	</nav>
+
+<!-- aside nav menu -->	
+	<div id="menuContent" class="asideGag ">
+		<aside class="col-xs-9 navAside">
+			<ul class="navAside__list">
+			  <li class="navAside__item" ><a  id="closeMenu" class="navAside__link navAside__link--first" href="#"><span aria-hidden="true">&times;</span></a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">Home</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link1</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link2</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link3</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link4</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_in.html"><p class="navAside__img "></p>Sign In</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_up.html"><p class="navAside__img navAside__img--up"></p>Sign Up</a></li>
+			  <li class="navAside__item" ></li>
+			</ul>
+		</aside>
+	</div>
 
 <!-- form sing up otp -->
 	<div class="container-fluid ">
@@ -86,21 +138,56 @@
 				<div class="form__grey">
 					<h2 class="text-center form__head">Create New Account</h2>
 					<p class="text-center form__text  form__text--first">One Time Password (OTP) has been sent to your mobile ******5214, please enter the same here to login.</p>
-					 <form class="form__body" role="form" action="index.html">
+					 <form class="form__body" role="form" action="dashboard.html">
 						  <div class="form-group input-group-lg">
 						    <input type="password" class="form-control" required  placeholder="Get me one time password (OTP)" >
 						  </div>
 						  
 						  <button type="submit" class="btn btn-block btn-lg btn-green">VERIFY</button>
 					</form>
-					<p class="text-center form__text">Didn’t receive one? <a href="#" class="form__link">Get another</a></p>
-					<p class="text-center form__text">Entered a wrong number? <a href="#" class="form__link">Try again</a></p>
+					<p class="text-center form__text">Didn’t receive one? <a href="sing_up.html" class="form__link">Get another</a></p>
+					<p class="text-center form__text">Entered a wrong number? <a href="sing_up.html" class="form__link">Try again</a></p>
 				</div>
 				<p class="text-center form__text  form__text--last">Already a member? <a href="sing_in.html" class="form__link">Sign In</a></p>
 			</div>
 		</div>
 	</div>	
-<!-- aside nav menu -->	
+<!-- section about -->
+	<section class="about hidden-md hidden-lg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class=" col-sm-6 col-md-5   col-lg-4">
+	    				<form class="input-group about__form" action="#">
+	      					<input type="email" class="form-control input-lg about__input"  required  placeholder="Enter your email address">
+	      					<span class="input-group-btn">
+	        					<button class="btn btn-lg btn-default about__button" type="submit" >SUBSCRIBE</button>
+	      					</span>
+	    				</form>
+	 			 </div>
+	 			 <div class=" col-sm-6 col-md-5 col-md-offset-2 col-lg-offset-4 col-lg-4 about__socWrap">
+		 			 
+						<a class="about__soc" href="#"><i class="fa fa-facebook fa-3x " aria-hidden="true"></i></a>
+			 			<a class="about__soc" href="#"><i class="fa fa-twitter fa-3x " aria-hidden="true"></i></a>
+						<a class="about__soc" href="#"><i class="fa fa-linkedin fa-3x " aria-hidden="true"></i></a>
+						<a class="about__soc" href="#"><i class="fa fa-google-plus fa-3x " aria-hidden="true"></i></a>
+					
+				</div>
+			</div>
+			<div class="row  hidden-xs  about__line"></div>
+			<div class="row ">
+				 <div class="col-sm-6 col-md-5 col-lg-4 about__but">
+					<p class="about__buy">BUY</p>
+					<p class="about__sell">SELL</p>
+				</div>
+				<ul class="col-sm-6 col-md-5 col-md-offset-2 col-lg-offset-4 col-lg-4 about__list">
+					<li class="about__item"><a class="about__link" href="about_us.html">About Us</a> </li>
+					<li class="about__item"><a class="about__link" href="about_us.html#imprint">Imprint</a> </li>
+					<li class="about__item"><a class="about__link" href="terms.html">Terms and Conditions</a> </li>
+					<li class="about__item"><a class="about__link" href="contact_us.html">Contact us</a> </li>
+				</ul>					
+			</div>		
+		</div>
+	</section>				
 	
 
 <!-- footer -->

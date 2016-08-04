@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dashboard history</title>
+
+	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body>
+<!--header-> -->
+	<nav class="navbar navbar-default headNav" role="navigation">
+		<div class="container-fluid">
+
+			<a class="navbar-brand headNav__logo" href="index.html">
+				<img class="headNav__logoImg" src="image/Logo_header.png">
+			</a>
+
+			<ul class="nav navbar-nav hidden-xs ">
+				<li class="dropdown ">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img"></p>
+						English
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown">
+						<li><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+					</ul>
+				</li>
+				<li class="hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link" href="#">
+						<p class="headNav__img headNav__img--currency2"></p>
+						Bitcoins
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="dropdown ">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img headNav__img--currency"></p>
+						EUR
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown">
+						<li><a href = "#">GBP</a></li>
+						<li><a href = "#">EUR</a></li>
+						<li><a href = "#">USD</a></li>
+					</ul>
+				</li>	
+			</ul>
+
+			<ul class="nav   myNavRight">
+				<li>
+					<a id="menuLink" class="headNav__link headNav__link--2" href="#">
+						<i class="fa fa-bars fa-2x " aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="dropdown  hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img headNav__img--currency"></p>EUR
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown--right">
+						<li><a href = "#">GBP</a></li>
+						<li><a href = "#">EUR</a></li>
+						<li><a href = "#">USD</a></li>
+					</ul>
+				</li>
+				<li class="dropdown hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img"></p>
+						English
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown--right">
+						<li class="dropBlock"><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+					</ul>
+				</li>
+				<li class="hidden-xs ">
+					<a class="headNav__link" href="index.html">
+						<p class="headNav__img headNav__img--out"></p>
+						Sign Out
+					</a>
+				</li>
+				<li class="hidden-xs ">
+					<a class="headNav__link" href="dashboard.html">
+						<p class="headNav__img headNav__img--dash"></p>
+						Dashboard	
+					</a>
+				</li>
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link" href="sing_up.html">
+						<p class="headNav__img headNav__img--up"></p>
+						Sign Up
+					</a>
+				</li>
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link" href="sing_in.html">
+						<p class="headNav__img headNav__img--in"></p>
+						Sign In
+					</a>
+				</li>
+			</ul>
+		</div><!-- /.container-fluid -->
+	</nav>
+
+<!-- aside nav menu -->	
+	<div id="menuContent" class="asideGag ">
+		<aside class="col-xs-9 navAside">
+			<ul class="navAside__list">
+			  <li class="navAside__item" ><a  id="closeMenu" class="navAside__link navAside__link--first" href="#"><span aria-hidden="true">&times;</span></a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">Home</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link1</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link2</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link3</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link4</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_in.html"><p class="navAside__img "></p>Sign In</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_up.html"><p class="navAside__img navAside__img--up"></p>Sign Up</a></li>
+			  <li class="navAside__item" ></li>
+			</ul>
+		</aside>
+	</div>
+<!-- dash board  -->
+	<div class="dash">
+		<div class="container-fluid ">
+		<div class="dash__wrap">
+			<nav role="navigation" class="navbar navbar-default dash__nav">
+				<div class="navbar-header">
+				    <button class="btn btn-block btn-lg navbar-toggle dash__toggle " data-target="#navbarCollapse" data-toggle="collapse" type="button">
+				      History<i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+				    </button>
+				  </div>
+
+			 <div id="navbarCollapse" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav dash__navList">
+					<li><a  class="dash__navLink" href="dashboard.html">Dashboard</a></li>
+					<li><a  class="dash__navLink" href="#">Buy</a></li>
+					<li><a  class="dash__navLink" href="#">Sell</a></li>
+					<li><a  class="dash__navLink active" href="#">History</a></li>
+					<li><a  class="dash__navLink" href="#">Settings</a></li>
+					<li><a  class="dash__navLink" href="#">Verification</a></li>
+					<li><a  class="dash__navLink" href="#">Support</a></li>
+				</ul> 
+			</div>   
+			</nav>
+	
+		
+			
+					
+			</section>
+	<!-- section history dash board-->	
+			<section class="history">
+			<h2  class="history__name ">History</h2>
+				<div class="history__wrap">
+					<div class="container-fluid ">
+								<div class="row hisTables__wrap visible-sm visible-md visible-lg ">
+
+									 <div class="hisTables">
+										<table class="table"> 
+											<thead class="hisTables__head"> 
+												<tr> <th>TIME STAMP</th> <th>ORDER TYPE </th> <th>PRICE </th> <th>AMOUNT</th> <th>CRYPTOCOIN</th><th>STATUS</th></tr> 
+											</thead>
+											<tbody class="hisTables__body"> 
+												<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+												<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+												<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+												<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+												<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+												<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+												<tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div id="historySlide"  class="carousel slide historySlide visible-xs ">
+								<div class="row hisTables__wrap">	
+									<div class="carousel-inner">
+										<div class="item active hisTables">
+											<table class="table"> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>11111111111</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
+												</thead>
+											</table>	
+										</div>						
+										<div class="item hisTables">
+											<table class="table"> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>2222222222</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
+												</thead>
+											</table>
+										</div>
+										<div class="item hisTables">
+											<table class="table"> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>333333333333</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
+												</thead>
+											</table>	
+										</div>
+										<div class="item hisTables">	
+											<table class="table"> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>44444444444</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
+												</thead>
+											</table>
+										</div>
+										<div class="item hisTables">	
+											<table class="table"> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>5555555555</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
+												</thead>
+											</table>
+										</div>
+									</div>
+								
+									<ol class="carousel-indicators historySlide__indicator">
+										<li data-target="#historySlide" data-slide-to="0" class="active"></li>
+										<li data-target="#historySlide" data-slide-to="1"></li>
+										<li data-target="#historySlide" data-slide-to="2"></li>
+										<li data-target="#historySlide" data-slide-to="3"></li>
+										<li data-target="#historySlide" data-slide-to="4"></li>
+									</ol>
+
+								</div>	
+							</div>
+				</div>
+			</section>	
+		</div>
+		</div><!-- end container-fluid-->
+	<div>
+
+
+
+<!-- footer -->
+	<footer class="footerMin">
+		<div class="container-fluid">
+			<p class="text-center footerMin__text">© 2016 - Jigzo, All right reserved</p>
+		</div>
+	</footer>
+</body>
+</html>

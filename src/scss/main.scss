@@ -22,24 +22,29 @@ body {
 	margin-bottom: $footerMinHeight;
 	font-family: $openSans;
 } 
-
-/* ---header----*/
-	.header{
+/* ---header nav----*/
+	.headNav{
 		background-color: $headColor;
-		padding: 15px 0;
+		padding: 8px 0;
+		padding-top: 15px;
+		margin-bottom: 0;
+		margin-top: 0;
 		color: white;
 		line-height: 2.43;
-		&__img{
-			width: 70%;
-		}	
-	}
-	.headerBlock{
-		height: 100%;
-		padding: 0;
+		 &__logo{
+			margin-top: 8px;
+			padding: 0;
+			padding-left: 15px;
+		}
+		&__logoImg{
+			max-height: 90%;
+		}
+	
 		&__img{
 			display: inline-block;
 			vertical-align: text-bottom;
 			margin: 0;
+			margin-right: 5px;
 			background: url(../image/sprite2.png);
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -58,35 +63,62 @@ body {
 				background-position: -38px 0px;
 				width: 26px;
 			}
+			&--out{
+				background-position: -103px 0px;
+				width: 26px;
+			}
 			&--up{
 				background-position: -19px 0px;
+			}
+			&--dash{
+				background-position: -127px 0px;
 			}	
 		}
-		&__text{
-			display: inline-block;
-			padding: 0  1%;
-			margin: 0;
-			&--menu{
-				padding-top: 4px;
-				padding-right: 4px;
-				text-align: right;
-				width: 100%;
+		
+		ul{
+			>li{
+				display: inline-block ;
+
+				>a.headNav__link{
+					display: inline-block;
+					color: white;
+				text-decoration: none;
+				padding-left: 10px;
+				padding-right: 0px;
+				&:hover,
+				&:visited,
+				&:focus {
+					color: white !important;
+					text-decoration: none;
+					background-color:  $headColor !important;
+					}
+				&--2{
+					padding-left: 5px;
+					padding-right: 0px;
+					padding-top: 15px;
+				}
+				}
+
 			}
 		}
-		&__link{
-			color: white;
-			text-decoration: none;
-			&:hover,
-			&:visited {
-				color: white;
-				text-decoration: none;
+		ul.myNavRight{
+			float:right;
+			>li{
+				float:right;
+				>a.headNav__link{
+				padding-left: 0px;
+				padding-right: 10px;
+				}
+				>ul>li{
+					display:block;
+				}
 			}
 		}
 		&__dropdown{
 			background-color: $headColor;
-			min-width: 0;
-			border-radius: 7px;
-			left: -36%;
+			min-width: 0; 
+			border-radius: 7px  !important;
+			left: 20%;
 			&::after {
 				content:" ";
 				position:absolute;
@@ -96,7 +128,6 @@ body {
 				display:block;
 				width: 3px;
 				height:3px;
-				//box-shadow: -1px -3px 10px 1px #000;
 				box-shadow: 0px -3px 8px black; 
 			}
 			&::before{
@@ -110,15 +141,60 @@ body {
 				border-style: solid;
 				border-color: transparent transparent $headColor transparent;
 			}
+			>li{
+				display: block ;
+			}
 			>li>a{
-				color: white;
+				color: white ;
+				width:100%;
 				&:hover{
-					color: white;
-					background-color:  $headColorHover;
+					color: white ;
+					background-color:  $headColorHover ;
 				}
 			}
+
+		}
+		&__dropdown--right{
+			background-color: $headColor;
+			min-width: 0;
+			border-radius: 7px  !important;
+			left: 0%;
+			&::after {
+				content:" ";
+				position:absolute;
+				bottom: 100%;  
+				left: 80%; 
+				z-index:0;
+				display:block;
+				width: 3px;
+				height:3px;
+				box-shadow: 0px -3px 8px black; 
+			}
+			&::before{
+				content: " ";
+				position: absolute;
+				bottom: 100%;  
+				left: 80%;
+				z-index:1;
+				margin-left: -5px;
+				border-width: 5px;
+				border-style: solid;
+				border-color: transparent transparent $headColor transparent;
+			}
+			>li{
+			display: block ;
+			}
+			>li>a{
+				color: white ;
+				&:hover{
+					color: white ;
+					background-color:  $headColorHover ;
+				}
+			}
+			
 		}
 	}
+
 /* ----footer-line--- */
 	.footerMin {
 		position: absolute;
@@ -263,7 +339,7 @@ body {
 		position: absolute;
 		width: 100%;
 		display: none;
-		z-index: 10;
+		z-index: 1001;
 	}
 /* ---- section pay system------*/
 	.paySys{
@@ -1350,3 +1426,37 @@ body {
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+@media (max-width: 380px) {
+	.headNav{
+		 &__logo{
+			margin-top: 10px;
+			padding: 0;
+			padding-left: 0px;
+		}
+		&__logoImg{
+			max-height: 70%;
+		}
+		ul.myNavRight{
+			float:right;
+			>li>a.headNav__link{
+					padding-left: 0px;
+					padding-right: 5px;
+					&--2{
+						padding-right: 0px;
+						}
+					}
+		}
+	}
+
+
+
+}

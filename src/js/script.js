@@ -1,18 +1,11 @@
  $(function() {
- var $menuLink = $("#menuLink");
- var $menuContent = $("#menuContent");
- var $closeMenu = $("#closeMenu");
-$($menuLink).on("click", function(){
-	$($menuContent).toggle()
-})
-$($closeMenu).on("click", function(){
-	$($menuContent).hide()
-})
+ 	if (  $(window).innerWidth()<768){
+		toggleMenu()
+		}
 
 
-
-$('.accord').on('hidden.bs.collapse', toggleChevron);
-$('.accord').on('shown.bs.collapse', toggleChevron);
+	$('.accord').on('hidden.bs.collapse', toggleChevron);
+	$('.accord').on('shown.bs.collapse', toggleChevron);
 
  })
 
@@ -23,7 +16,7 @@ function toggleChevron(e) {
         .toggleClass('fa-chevron-down fa-chevron-up');
 }
 
-var contactMap = function(){
+function contactMap(){
 	
 	var mymap = L.map('mapid').setView( [53.61, 10.001356], 10 );
 
@@ -37,12 +30,25 @@ var contactMap = function(){
 	L.marker([53.676012, 10.001356], {icon: greenIcon}).addTo(mymap);
 
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-	    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+	    
 	    maxZoom: 18,
 	    id: 'kosty79.10hib9ca',
 	    accessToken: 'pk.eyJ1Ijoia29zdHk3OSIsImEiOiJjaXJibXdiYm4wMDVhaWxsdzFvdG0yYWk0In0.xVVsKeKHcP72EYKT2jj6xQ'
 	}).addTo(mymap);
+
+	$("div.leaflet-control-attribution").children("a").hide()
 }
 
+function toggleMenu(){
+	var $menuLink = $("#menuLink");
+ 	var $menuContent = $("#menuContent");
+ 	var $closeMenu = $("#closeMenu");
 
+	$($menuLink).on("click", function(){
+		$($menuContent).toggle()
+	});
+	$($closeMenu).on("click", function(){
+		$($menuContent).hide()
+	});
+}
 
