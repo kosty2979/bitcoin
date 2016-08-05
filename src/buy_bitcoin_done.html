@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>sing_up</title>
+	<title>buy bitcoin done</title>
 
+	
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -87,25 +88,25 @@
 						<li><a href = "#">English</a></li>
 					</ul>
 				</li>
-				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+				<li class="hidden-xs ">
 					<a class="headNav__link" href="index.html">
 						<p class="headNav__img headNav__img--out"></p>
 						Sign Out
 					</a>
 				</li>
-				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+				<li class="hidden-xs ">
 					<a class="headNav__link" href="dashboard.html">
 						<p class="headNav__img headNav__img--dash"></p>
 						Dashboard	
 					</a>
 				</li>
-				<li class="hidden-xs ">
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
 					<a class="headNav__link" href="sing_up.html">
 						<p class="headNav__img headNav__img--up"></p>
 						Sign Up
 					</a>
 				</li>
-				<li class="hidden-xs">
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
 					<a class="headNav__link" href="sing_in.html">
 						<p class="headNav__img headNav__img--in"></p>
 						Sign In
@@ -131,30 +132,122 @@
 			</ul>
 		</aside>
 	</div>
-
-<!-- form sing up -->
-	<div class="container-fluid ">
-		<div class="row form">
-			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-				<div class="form__grey">
-					<h2 class="text-center form__head">Create New Account</h2>
-					 <form class="form__body" role="form" action="sing_up_otp.html">
-						  <div class="form-group input-group-lg">
-						    <input type="email" class="form-control form__input" required  placeholder="Email" >
-						    <input type="tel" pattern="(\+?\d[- .]*){7,13}"   class="form-control" required  placeholder="Mobile" >
-						  </div>
-						  <button type="submit" class="btn btn-block btn-lg btn-green">SIGN UP</button>
-					</form>
-					<p class="text-center form__text">NOTE: Customers from everywhere in the world can sell Bitcoins to JIGZO.</p>
-					<p class="text-center form__text form__text--black">Verification is currently available for citizen in the following countries:</p>
-					<p class="text-center form__text form__text--grey">Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom</p>
+<!-- buy bitcoin -->
+	<section class="buyBitcoin">
+		<div class="container-fluid ">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
+					<h2 class="buyBitcoin__head">Buy Bitcoin</h2>
+					<p class="buyBitcoin__text">Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
-				<p class="text-center form__text  form__text--last">Already a member? <a href="sing_in.html" class="form__link">Sign In</a></p>
-			</div>
-		</div>
-	</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+					<div class="bitcoin__line text-center">
+						<p class="bitcoin__logo"></p>
+						<p class="bitcoin__name">Bitcoin:</p>
+						<p class="bitcoin__numb">427.03</p>
+						<p class="bitcoin__currency">EUR</p>
+					</div>
+				</div>
+			</div>	
+		</div><!-- end container-fluid-->
+	</section>
+<!-- deposite info -->
+	<section class="depInfo">
+		<div class="container-fluid ">
+			<div class="row">
+				<div class="col-xs-12 ">
+					<h4 class="depInfo__head">Deposit Information</h4>
+					<div class="depInfo__wrap">
+						<p class="depInfo__img"></p>
+						<p class="depInfo__text">Please complete your deposit with your bank.</p>
+					</div>
+				</div>
+			</div>	
+		</div><!-- end container-fluid-->
+	</section>
+<!-- deposite request -->
+	<section class="depReq">
+		<div class="container-fluid ">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 ">
+					<h4 class="depReq__head">Thank you for notifying JIZGO of your local bank deposit reques</h4>
+					<p class="depReq__text">Please complete your deposit by paying JIGZO via banking or by visiting your local bank branch using this information.</p>
+
+					<div class="depReq__line depReq__line--first clearfix">
+						<p class="depReq__left text-left depReq__lineTxt depReq__lineTxt--sBold">Transaction Amount</p>
+						<p class="depReq__right text-right depReq__lineTxt depReq__lineTxt--sBold">200.00 USD</p>
+					</div>
+
+					<div class="depReq__line  clearfix">
+						<p class="depReq__left text-left depReq__lineTxt ">Reference #</p>
+						<p class="depReq__right text-right depReq__lineTxt ">4022342148</p>
+					</div>
+
+					<div class="depReq__line  clearfix">
+						<p class="depReq__left text-left depReq__lineTxt ">Bank</p>
+						<p class="depReq__right text-right depReq__lineTxt ">Baraclays Bank PLC</p>
+					</div>
+
+					<div class="depReq__line  clearfix">
+						<p class="depReq__left text-left depReq__lineTxt ">Bank Address</p>
+						<p class="depReq__right text-right depReq__lineTxt ">1 Churchill </p>
+						<p class="depReq__right text-right depReq__right--full depReq__lineTxt ">E14 SHP</p>
+						<p class="depReq__right text-right depReq__right--full depReq__lineTxt ">London</p>
+						<p class="depReq__right text-right depReq__right--full depReq__lineTxt ">UK</p>
+					</div>
+
+					<div class="depReq__line  clearfix">
+						<p class="depReq__left text-left depReq__lineTxt ">Bank Currency</p>
+						<p class="depReq__right text-right depReq__lineTxt ">USD</p>
+					</div>
+
+					<div class="depReq__line  clearfix">
+						<p class="depReq__left text-left depReq__lineTxt ">Beneficiary</p>
+						<p class="depReq__right text-right depReq__lineTxt ">Optinal Payments Ltd.</p>
+					</div>
+
+					<div class="depReq__line  clearfix">
+						<p class="depReq__left text-left depReq__lineTxt ">Sort Code</p>
+						<p class="depReq__right text-right depReq__lineTxt ">20-36-47</p>
+					</div>
+
+					<div class="depReq__line  clearfix">
+						<p class="depReq__left text-left depReq__lineTxt ">IBAN</p>
+						<p class="depReq__right text-right depReq__lineTxt ">USD</p>
+					</div>
+
+					<div class="depReq__line  clearfix">
+						<p class="depReq__left text-left depReq__lineTxt ">BIC</p>
+						<p class="depReq__right text-right depReq__lineTxt ">USD</p>
+					</div>
+					
+					<div class="row depReq__btnBlock">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+						<a class="btn btn-default depReq__btn"  data-slide="prev" href="#">MY ACCOUNT</a>
+						</div>
+						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 text-right">
+							<a class="btn btn-default depReq__btn"  data-slide="next" href="#">EMAIL ME A COPY</a>
+						</div>	
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6  col-md-5 col-md-offset-1">
+				<div class="depReq__greyWrap">
+					<p class="depReq__textGrey">Your reference # is your 12 - digit JIZGO A/C ID</p>
+					<hr>
+					<p class="depReq__text2">If your bank goesnot accomodate a refernce no.
+					</p>
+					<p class="depReq__text2">Please contact 
+						<a class="depReq__link" href="#">JIZGO Support</a>
+					</p>
+					<hr>
+				</div>
+				</div>
+			</div><!-- end row-->	
+		</div><!-- end container-fluid-->
+	</section>
 <!-- section about -->
-	<section class="about hidden-md hidden-lg">
+	<section class="about">
 		<div class="container-fluid">
 			<div class="row">
 				<div class=" col-sm-6 col-md-5   col-lg-4">
@@ -189,6 +282,8 @@
 			</div>		
 		</div>
 	</section>			
+
+
 <!-- footer -->
 	<footer class="footerMin">
 		<div class="container-fluid">

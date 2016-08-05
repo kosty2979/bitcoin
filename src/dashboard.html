@@ -22,7 +22,7 @@
 		<div class="container-fluid">
 
 			<a class="navbar-brand headNav__logo" href="index.html">
-				<img class="headNav__logoImg" src="image/Logo_header.png">
+				<img class="headNav__logoImg" src="image/Logo_header.png" alt="logo">
 			</a>
 
 			<ul class="nav navbar-nav hidden-xs ">
@@ -135,176 +135,175 @@
 <!-- dash board  -->
 	<div class="dash">
 		<div class="container-fluid ">
-		<div class="dash__wrap">
-			<nav role="navigation" class="navbar navbar-default dash__nav">
-				<div class="navbar-header">
-				    <button class="btn btn-block btn-lg navbar-toggle dash__toggle " data-target="#navbarCollapse" data-toggle="collapse" type="button">
-				      Dashboard <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
-				    </button>
-				  </div>
+			<div class="dash__wrap">
+				<nav role="navigation" class="navbar navbar-default dash__nav">
+					<div class="navbar-header">
+						<button class="btn btn-block btn-lg navbar-toggle dash__toggle " data-target="#navbarCollapse" data-toggle="collapse" type="button">
+						Dashboard <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+						</button>
+					  </div>
 
-			 <div id="navbarCollapse" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav dash__navList">
-					<li><a  class="dash__navLink active" href="dashboard.html">Dashboard</a></li>
-					<li><a  class="dash__navLink" href="#">Buy</a></li>
-					<li><a  class="dash__navLink" href="#">Sell</a></li>
-					<li><a  class="dash__navLink" href="dashboard_history.html">History</a></li>
-					<li><a  class="dash__navLink" href="#">Settings</a></li>
-					<li><a  class="dash__navLink" href="#">Verification</a></li>
-					<li><a  class="dash__navLink" href="#">Support</a></li>
-				</ul> 
-			</div>   
-			</nav>
-	<!-- section headLine dash board-->
-			<section class="headLine">
-				<div class="row">
-				<div class="col-md-8">
-					<h2  class="headLine__name ">Member Area</h2>
-					<p class="headLine__text ">Here you can find an overview of your buy and sell limits, account and verification status, pending or completed orders and our security options.</p>
-				</div>
-				<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-1 ">
-					<a type="button" class="btn btn-block btn-lg btn-green headLine__btn " href="#">Get verified now!</a>
-				</div>
-				</div>
-			</section>
-	<!-- section accLimit dash board-->	
-			<section class="accLimit">
-				<div class="accLimit__wrap">
-					<h2  class="accLimit__name">Account Limits</h2>
-					<ul class="nav nav-tabs accLimit__list">
-						<li class="active accLimit__item"><a class="accLimit__tab" data-toggle="tab" href="#online_payments">Online Payments</a></li>
-						<li class="accLimit__item"><a class="accLimit__tab" data-toggle="tab" href="#credit_card">Credit Card</a></li>	
-					</ul>
+					 <div id="navbarCollapse" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav dash__navList">
+							<li><a  class="dash__navLink active" href="dashboard.html">Dashboard</a></li>
+							<li><a  class="dash__navLink" href="#">Buy</a></li>
+							<li><a  class="dash__navLink" href="#">Sell</a></li>
+							<li><a  class="dash__navLink" href="dashboard_history.html">History</a></li>
+							<li><a  class="dash__navLink" href="#">Settings</a></li>
+							<li><a  class="dash__navLink" href="#">Verification</a></li>
+							<li><a  class="dash__navLink" href="#">Support</a></li>
+						</ul> 
+					</div>   
+				</nav>
+		<!-- section headLine dash board-->
+				<section class="headLine">
+					<div class="row">
+						<div class="col-md-8">
+							<h2  class="headLine__name ">Member Area</h2>
+							<p class="headLine__text ">Here you can find an overview of your buy and sell limits, account and verification status, pending or completed orders and our security options.</p>
+						</div>
+						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-1 ">
+							<a  class="btn btn-block btn-lg btn-green headLine__btn " href="#">Get verified now!</a>
+						</div>
+					</div>
+				</section>
+		<!-- section accLimit dash board-->	
+				<section class="accLimit">
+					<div class="accLimit__wrap">
+						<h2  class="accLimit__name">Account Limits</h2>
+						<ul class="nav nav-tabs accLimit__list">
+							<li class="active accLimit__item"><a class="accLimit__tab" data-toggle="tab" href="#online_payments">Online Payments</a></li>
+							<li class="accLimit__item"><a class="accLimit__tab" data-toggle="tab" href="#credit_card">Credit Card</a></li>	
+						</ul>
 
-					<div class="tab-content">
-						<div id="online_payments" class="tab-pane fade in active">
-							<div class="container-fluid ">
-								<div class="row tables__wrap">
-									<div class="col-md-7 tables">
-										<table class="table"> 
-											<thead class="tables__head"> 
-												<tr> <th>BUYING</th> <th><p class="tables__textSmall">TODAY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th> </tr> 
-											</thead>
-											<tbody class="tables__body"> 
-												<tr> <td>Bought</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="tables__line--grey"> <td >Buy Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr> <td >Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="hidden-xs hidden-sm">  <td ></td> <td></td> <td></td> <td></td> </tr>
-											</tbody>
-										</table>
+						<div class="tab-content">
+							<div id="online_payments" class="tab-pane fade in active">
+								<div class="container-fluid ">
+									<div class="row tables__wrap">
+										<div class="col-md-7 tables">
+											<table class="table"> 
+												<thead class="tables__head"> 
+													<tr> <th>BUYING</th> <th><p class="tables__textSmall">TODAY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th> </tr> 
+												</thead>
+												<tbody class="tables__body"> 
+													<tr> <td>Bought</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="tables__line--grey"> <td >Buy Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr> <td >Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="hidden-xs hidden-sm">  <td ></td> <td></td> <td></td> <td></td> </tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-md-5 tables">
+											<table class="table"> 
+												<thead class="tables__head"> 
+													<tr><th class="hidden-lg hidden-md">BUYING</th> <th><p class="tables__textSmall">MONTHLY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th></tr>
+												</thead>
+												<tbody class="tables__body"> 
+													<tr>  <td class="hidden-lg hidden-md">Bought</td>  <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="tables__line--grey"> <td class="hidden-lg hidden-md">Buy Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr>  <td class="hidden-lg hidden-md">Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr>  <td class="hidden-lg hidden-md"></td> <td></td> <td></td> <td></td> </tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
-									<div class="col-md-5 tables">
-										<table class="table"> 
-											<thead class="tables__head"> 
-												<tr><th class="hidden-lg hidden-md">BUYING</th> <th><p class="tables__textSmall">MONTHLY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th></tr>
-											</thead>
-											<tbody class="tables__body"> 
-												<tr>  <td class="hidden-lg hidden-md">Bought</td>  <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="tables__line--grey"> <td class="hidden-lg hidden-md">Buy Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr>  <td class="hidden-lg hidden-md">Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr>  <td class="hidden-lg hidden-md"></td> <td></td> <td></td> <td></td> </tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-
-								<div class="row tables__wrap">
-									<div class="col-md-7 tables">
-										<table class="table"> 
-											<thead class="tables__head"> 
-												<tr> <th>SELLING</th> <th><p class="tables__textSmall">TODAY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th> </tr> 
-											</thead>
-											<tbody class="tables__body"> 
-												<tr> <td>Sold</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="tables__line--grey"> <td >Sell Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr> <td >Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="hidden-xs hidden-sm">  <td ></td> <td></td> <td></td> <td></td> </tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="col-md-5 tables">
-										<table class="table"> 
-											<thead class="tables__head"> 
-												<tr><th class="hidden-lg hidden-md">SELLING</th> <th><p class="tables__textSmall">MONTHLY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th></tr>
-											</thead>
-											<tbody class="tables__body"> 
-												<tr>  <td class="hidden-lg hidden-md">Sold</td>  <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="tables__line--grey"> <td class="hidden-lg hidden-md">Sell Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr>  <td class="hidden-lg hidden-md">Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr>  <td class="hidden-lg hidden-md"></td> <td></td> <td></td> <td></td> </tr>
-											</tbody>
-										</table>
+									<div class="row tables__wrap">
+										<div class="col-md-7 tables">
+											<table class="table"> 
+												<thead class="tables__head"> 
+													<tr> <th>SELLING</th> <th><p class="tables__textSmall">TODAY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th> </tr> 
+												</thead>
+												<tbody class="tables__body"> 
+													<tr> <td>Sold</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="tables__line--grey"> <td >Sell Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr> <td >Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="hidden-xs hidden-sm">  <td ></td> <td></td> <td></td> <td></td> </tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-md-5 tables">
+											<table class="table"> 
+												<thead class="tables__head"> 
+													<tr><th class="hidden-lg hidden-md">SELLING</th> <th><p class="tables__textSmall">MONTHLY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th></tr>
+												</thead>
+												<tbody class="tables__body"> 
+													<tr>  <td class="hidden-lg hidden-md">Sold</td>  <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="tables__line--grey"> <td class="hidden-lg hidden-md">Sell Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr>  <td class="hidden-lg hidden-md">Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr>  <td class="hidden-lg hidden-md"></td> <td></td> <td></td> <td></td> </tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div id="credit_card" class="tab-pane fade">
-							<div class="container-fluid ">
-								<div class="row tables__wrap">
-									<div class="col-md-7 tables">
-										<table class="table"> 
-											<thead class="tables__head"> 
-												<tr> <th>BUYING</th> <th><p class="tables__textSmall">TODAY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th> </tr> 
-											</thead>
-											<tbody class="tables__body"> 
-												<tr> <td>Bought</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="tables__line--grey"> <td >Buy Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr> <td >Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="hidden-xs hidden-sm">  <td ></td> <td></td> <td></td> <td></td> </tr>
-											</tbody>
-										</table>
+							<div id="credit_card" class="tab-pane fade">
+								<div class="container-fluid ">
+									<div class="row tables__wrap">
+										<div class="col-md-7 tables">
+											<table class="table"> 
+												<thead class="tables__head"> 
+													<tr> <th>BUYING</th> <th><p class="tables__textSmall">TODAY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th> </tr> 
+												</thead>
+												<tbody class="tables__body"> 
+													<tr> <td>Bought</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="tables__line--grey"> <td >Buy Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr> <td >Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="hidden-xs hidden-sm">  <td ></td> <td></td> <td></td> <td></td> </tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-md-5 tables">
+											<table class="table"> 
+												<thead class="tables__head"> 
+													<tr><th class="hidden-lg hidden-md">BUYING</th> <th><p class="tables__textSmall">MONTHLY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th></tr>
+												</thead>
+												<tbody class="tables__body"> 
+													<tr>  <td class="hidden-lg hidden-md">Bought</td>  <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="tables__line--grey"> <td class="hidden-lg hidden-md">Buy Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr>  <td class="hidden-lg hidden-md">Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr>  <td class="hidden-lg hidden-md"></td> <td></td> <td></td> <td></td> </tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
-									<div class="col-md-5 tables">
-										<table class="table"> 
-											<thead class="tables__head"> 
-												<tr><th class="hidden-lg hidden-md">BUYING</th> <th><p class="tables__textSmall">MONTHLY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th></tr>
-											</thead>
-											<tbody class="tables__body"> 
-												<tr>  <td class="hidden-lg hidden-md">Bought</td>  <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="tables__line--grey"> <td class="hidden-lg hidden-md">Buy Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr>  <td class="hidden-lg hidden-md">Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr>  <td class="hidden-lg hidden-md"></td> <td></td> <td></td> <td></td> </tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
 
-								<div class="row tables__wrap">
-									<div class="col-md-7 tables">
-										<table class="table"> 
-											<thead class="tables__head"> 
-												<tr> <th>SELLING</th> <th><p class="tables__textSmall">TODAY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th> </tr> 
-											</thead>
-											<tbody class="tables__body"> 
-												<tr> <td>Sold</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="tables__line--grey"> <td >Sell Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr> <td >Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="hidden-xs hidden-sm">  <td ></td> <td></td> <td></td> <td></td> </tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="col-md-5 tables">
-										<table class="table"> 
-											<thead class="tables__head"> 
-												<tr><th class="hidden-lg hidden-md">SELLING</th> <th><p class="tables__textSmall">MONTHLY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th></tr>
-											</thead>
-											<tbody class="tables__body"> 
-												<tr>  <td class="hidden-lg hidden-md">Sold</td>  <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr class="tables__line--grey"> <td class="hidden-lg hidden-md">Sell Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr>  <td class="hidden-lg hidden-md">Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
-												<tr>  <td class="hidden-lg hidden-md"></td> <td></td> <td></td> <td></td> </tr>
-											</tbody>
-										</table>
+									<div class="row tables__wrap">
+										<div class="col-md-7 tables">
+											<table class="table"> 
+												<thead class="tables__head"> 
+													<tr> <th>SELLING</th> <th><p class="tables__textSmall">TODAY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th> </tr> 
+												</thead>
+												<tbody class="tables__body"> 
+													<tr> <td>Sold</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="tables__line--grey"> <td >Sell Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr> <td >Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="hidden-xs hidden-sm">  <td ></td> <td></td> <td></td> <td></td> </tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-md-5 tables">
+											<table class="table"> 
+												<thead class="tables__head"> 
+													<tr><th class="hidden-lg hidden-md">SELLING</th> <th><p class="tables__textSmall">MONTHLY</p><p class="tables__text">GBP</p></th> <th>EUR</th> <th>USD</th></tr>
+												</thead>
+												<tbody class="tables__body"> 
+													<tr>  <td class="hidden-lg hidden-md">Sold</td>  <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr class="tables__line--grey"> <td class="hidden-lg hidden-md">Sell Limit</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr>  <td class="hidden-lg hidden-md">Remaining</td> <td>0.00 GBP</td> <td>0.00 EUR</td> <td>0.00 USD</td> </tr>
+													<tr>  <td class="hidden-lg hidden-md"></td> <td></td> <td></td> <td></td> </tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>	
-		</div>
+				</section>	
+			</div>
 		</div><!-- end container-fluid-->
-	<div>
+	</div>
 
 
 

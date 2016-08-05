@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>sing_up</title>
+	<title>buy bitcoin method</title>
 
+	
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -87,25 +88,25 @@
 						<li><a href = "#">English</a></li>
 					</ul>
 				</li>
-				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+				<li class="hidden-xs ">
 					<a class="headNav__link" href="index.html">
 						<p class="headNav__img headNav__img--out"></p>
 						Sign Out
 					</a>
 				</li>
-				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+				<li class="hidden-xs ">
 					<a class="headNav__link" href="dashboard.html">
 						<p class="headNav__img headNav__img--dash"></p>
 						Dashboard	
 					</a>
 				</li>
-				<li class="hidden-xs ">
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
 					<a class="headNav__link" href="sing_up.html">
 						<p class="headNav__img headNav__img--up"></p>
 						Sign Up
 					</a>
 				</li>
-				<li class="hidden-xs">
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
 					<a class="headNav__link" href="sing_in.html">
 						<p class="headNav__img headNav__img--in"></p>
 						Sign In
@@ -131,30 +132,117 @@
 			</ul>
 		</aside>
 	</div>
-
-<!-- form sing up -->
-	<div class="container-fluid ">
-		<div class="row form">
-			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-				<div class="form__grey">
-					<h2 class="text-center form__head">Create New Account</h2>
-					 <form class="form__body" role="form" action="sing_up_otp.html">
-						  <div class="form-group input-group-lg">
-						    <input type="email" class="form-control form__input" required  placeholder="Email" >
-						    <input type="tel" pattern="(\+?\d[- .]*){7,13}"   class="form-control" required  placeholder="Mobile" >
-						  </div>
-						  <button type="submit" class="btn btn-block btn-lg btn-green">SIGN UP</button>
-					</form>
-					<p class="text-center form__text">NOTE: Customers from everywhere in the world can sell Bitcoins to JIGZO.</p>
-					<p class="text-center form__text form__text--black">Verification is currently available for citizen in the following countries:</p>
-					<p class="text-center form__text form__text--grey">Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom</p>
+<!-- buy bitcoin -->
+	<section class="buyBitcoin">
+		<div class="container-fluid ">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
+					<h2 class="buyBitcoin__head">Buy Bitcoin</h2>
+					<p class="buyBitcoin__text">Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
-				<p class="text-center form__text  form__text--last">Already a member? <a href="sing_in.html" class="form__link">Sign In</a></p>
-			</div>
-		</div>
-	</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+					<div class="bitcoin__line text-center">
+						<p class="bitcoin__logo"></p>
+						<p class="bitcoin__name">Bitcoin:</p>
+						<p class="bitcoin__numb">427.03</p>
+						<p class="bitcoin__currency">EUR</p>
+					</div>
+				</div>
+			</div>	
+		</div><!-- end container-fluid-->
+	</section>
+
+<!-- payment method -->
+	<section class="payMet">
+		<div class="container-fluid ">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 ">
+				
+               			<h4 class="payMet__head">Payment Method</h4>
+					<form>
+						<div class="form-group form-group-lg">
+
+							<label class="payMet__label" for="amountDeport">Amount to Deport</label>
+							<p class="form-control" id="amountDeport">Amount (3.25 - 227.50 GBP)</p>
+						
+							<label class="payMet__label" for="CardNum">Card Number</label>
+							<div class="input-group">
+								<input type="text"   required class="form-control" id="CardNum" aria-describedby="addon">
+								 <span class=" input-group-addon payMet__imgHold" id="addon"><p ></p></span>
+							 </div>
+
+
+							 <label class="payMet__label" for="sel1">Card Currency</label>
+							 <select class="form-control" id="sel1" >
+							 	<option>eur</option>
+							 	<option>eur</option>
+							 	<option>eur</option>
+							 </select>
+							 <div class="row">
+							 	<div class="col-xs-6">
+									 <label class="payMet__label" for="sel2">Expiry Month</label>
+									 <select class="form-control col-xs-6" id="sel2"  >
+									 	<option>01</option>
+									 	<option>02</option>
+									 	<option>03</option>
+									 	<option>04</option>
+									 	<option>05</option>
+									 	<option>06</option>
+									 	<option>07</option>
+									 	<option>07</option>
+									 	<option>07</option>
+									 	<option>07</option>
+									 	<option>07</option>
+									 	<option>07</option>
+									 	<option>07</option>
+									 </select>	
+							 	</div>
+							 	<div class="col-xs-6">
+									 <label class="payMet__label" for="sel2">Year</label>
+									 <select class="form-control col-xs-6" id="sel2"  >
+									 	<option>2014</option>
+									 	<option>2015</option>
+									 	<option>2016</option>
+									 	<option>2017</option>
+									 </select>	
+							 	</div>
+							 	<div class="col-xs-6">
+							 		<label class="payMet__label" for="CardNum">Security Code</label>
+							 		<div class="input-group">
+							 			<input type="text"   required class="form-control" id="SecCode" aria-describedby="addon">
+							 			<span class=" input-group-addon payMet__imgHold payMet__imgHold--secCode" id="SecCode"><p ></p></span>
+							 		</div>
+							 	</div>
+							 </div>
+
+
+							 
+
+							 <!-- <button type="submit" class="btn btn-block btn-lg btn-green">SIGN UP</button> -->
+
+							 
+						</div>
+					</form>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-6  col-md-5 col-md-offset-1">
+				<div class="depReq__greyWrap">
+					<p class="depReq__textGrey">Your reference # is your 12 - digit JIZGO A/C ID</p>
+					<hr>
+					<p class="depReq__text2">If your bank goesnot accomodate a refernce no.
+					</p>
+					<p class="depReq__text2">Please contact 
+						<a class="depReq__link" href="#">JIZGO Support</a>
+					</p>
+					<hr>
+				</div>
+				</div>
+			</div><!-- end row-->	
+		</div><!-- end container-fluid-->
+	</section>
 <!-- section about -->
-	<section class="about hidden-md hidden-lg">
+	<section class="about">
 		<div class="container-fluid">
 			<div class="row">
 				<div class=" col-sm-6 col-md-5   col-lg-4">
@@ -189,6 +277,8 @@
 			</div>		
 		</div>
 	</section>			
+
+
 <!-- footer -->
 	<footer class="footerMin">
 		<div class="container-fluid">
