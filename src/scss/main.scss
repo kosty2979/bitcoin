@@ -1,4 +1,5 @@
 @import "bootstrap.min";
+@import "bootstrap-select.min";
 @import "normalize";
 @import "variables";
 
@@ -261,6 +262,8 @@ body {
 		background-color: $green;
 		font-weight: bold;
 		color: rgb(59, 85, 102);
+		padding-left: 0;
+		padding-right: 0;
 		&:hover{
 			background-color: $greenHover;
 			color: rgb(59, 85, 102);
@@ -667,7 +670,6 @@ body {
 			top:65%;
 			color: #555555;
 			width:5%;
-			height:100%;
 			&--left{
 				left:1%;
 			}
@@ -1651,9 +1653,9 @@ body {
 			padding-top:0;
 			padding-bottom:0;
 			background-color: #263F7F;
-			border-radius: 6px;
-			
-			>p{
+			border-radius: 6px;	
+			>b{
+				display: block;
 				margin-bottom: 0;
 				background: url(../image/sprite-dash-board.png);
 				background-size: cover;
@@ -1666,14 +1668,133 @@ body {
 			&--secCode{
 				background-color: transparent;
 				border-left: 1px solid red;
-				>p{
+				padding-right: 3px;
+				>b{
 					background-position: -1119px 0;
 					margin-top: 1px;
 				}
 			}
 		}
+		&__btn{
+			border-style: solid;
+	  		border-width: 1px;
+	  		border-color: rgb(182, 182, 182);
+	  		background-color: rgba(255, 255, 255, 0);
+	  		color: rgb(182, 182, 182);
+	  		font-weight: bold;
+	  		&:visited,
+	  		&:link{
+	  			background-color: rgba(255, 255, 255, 0);
+	  			color: rgb(182, 182, 182);
+	  			border-color: rgb(182, 182, 182);	
+	  		}
+	  		&:hover{
+	  			color: rgb(59, 85, 102);
+	  			border-color: rgb(59, 85, 102);
+	  			background-color: rgba(255, 255, 255, 0);
+	  		}
+		}
 		
+		&__btnBlock{
+			padding-bottom: 25px;
+			padding-top: 25px;
+		}
+		&__hr{
+			margin-left: 15px;
+			margin-right: 15px;
+			color: rgb(229, 229, 229);
+		}
+		&__greyWrap{
+			border-radius: 10px;
+  			background-color: rgb(249, 249, 249);
+  			padding-bottom: 40px;
+  			margin-top: 25px;
+  			margin-bottom: 25px;
+		}
+		&__head2{
+			padding: 40px 15px 20px;
+			margin: 0;
+			font-size: 1.1em;
+			color: rgb(28, 28, 28);
+  			line-height: 1.667;
+		}
+		&__text{
+			font-size: 1em;
+			padding: 5px 15px ;
+			color: rgb(171, 171, 171);
+ 			line-height: 2.2;
+ 			margin-bottom: 0;
+ 			>b{
+ 				font-weight: 600;
+ 			}
+ 			&--left{
+				display: inline-block;
+				float: left;
+				width:50%;
+				color: rgb(85, 85, 85);
+ 				border-right: 1px solid rgb(204, 204, 204);	
+ 			}
+ 			&--right{
+ 				display: inline-block;
+				float: right;
+				width:50%;
+ 			}
+		}
+		&__line{
+ 				border-bottom: 1px solid rgb(204, 204, 204);
+ 				&--first{
+ 					border-top: 1px solid rgb(204, 204, 204);
+ 				}
+ 			}		
 	}
+	.secCode__input{
+		border-right: 1px solid transparent;
+	}
+/*-- section settings dash board--*/	
+ .settings{
+ 	&__head{
+		font-size: 1.8em;
+ 		color: rgb(28, 28, 28);
+ 		line-height: 1;
+ 		margin-top:40px;
+ 		&--2{
+ 		margin-bottom:40px;
+ 		}
+	}
+	&__label{
+		padding-top:30px;
+		color: rgb(85, 85, 85);
+  		line-height: 2.125;
+  		font-weight: 400;
+  		font-size: 1.2em;
+		}
+ 	&__btn{
+		border-style: solid;
+	 	border-width: 1px;
+	 	border-color: rgb(182, 182, 182);
+	 	background-color: rgba(255, 255, 255, 0);
+	 	color: rgb(182, 182, 182);
+	 	font-weight: bold;
+	 	&:visited,
+	 	&:link{
+	 		background-color: rgba(255, 255, 255, 0);
+	 		color: rgb(182, 182, 182);
+	 		border-color: rgb(182, 182, 182);	
+	 	}
+	 	&:hover{
+	 		color: rgb(59, 85, 102);
+	 		border-color: rgb(59, 85, 102);
+	 		background-color: rgba(255, 255, 255, 0);
+	 	}
+	 	&.active{
+	 		background-color: $green;
+	 		color: rgb(59, 85, 102);
+	 		border-color: rgb(59, 85, 102);
+	 		border-style: solid;
+	 		border-width: 1px;
+	 	}
+}
+ }
 
 
 
@@ -1698,7 +1819,53 @@ body {
 					}
 		}
 	}
+}
 
-
-
+@media (max-width: 460px) {
+	.currency{
+		padding-bottom:60px;
+		&__ctrlSlide{
+			top:72%;
+		}
+	}
+	.card{
+		margin-top: 20px;
+		&__logo{
+			width: 30px;
+			height: 48px;
+			background-position: -33px 0px;
+			&--eth{
+				background-position: -53px 0px;
+				width: 27px;
+				height: 39px;
+				margin-top: 9px;
+			}
+			&--lite{
+				background-position: 1px 0px;
+			}
+		}
+		&__name{
+	  		font-size: 1.3em;
+	  		padding-right: 5px;
+		}
+		&__numb{
+	  		font-size: 1.6em;	
+		}
+		&__currency{
+	  		font-size: 1.1em;
+		}
+		&__button{
+			padding-bottom: 15px; 
+		}
+		&__buy{
+	  		font-size: 1.4em;
+	  		padding-top: 5px;
+	  		padding-bottom: 5px;
+		}
+		&__sell{
+	  		font-size: 1.4em;
+	  		padding-top: 5px;
+	  		padding-bottom: 5px;
+		}
+	}
 }

@@ -13,6 +13,7 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	
 </head>
@@ -156,86 +157,91 @@
 	<section class="payMet">
 		<div class="container-fluid ">
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 ">
-				
+				<div class="col-xs-12 col-sm-6 ">			
                			<h4 class="payMet__head">Payment Method</h4>
-					<form>
+					<form action="#">
 						<div class="form-group form-group-lg">
-
 							<label class="payMet__label" for="amountDeport">Amount to Deport</label>
 							<p class="form-control" id="amountDeport">Amount (3.25 - 227.50 GBP)</p>
 						
-							<label class="payMet__label" for="CardNum">Card Number</label>
+							<label class="payMet__label" for="cardNum">Card Number</label>
 							<div class="input-group">
-								<input type="text"   required class="form-control" id="CardNum" aria-describedby="addon">
-								 <span class=" input-group-addon payMet__imgHold" id="addon"><p ></p></span>
+								<input type="text"   required class="form-control" id="cardNum" name="cardNum" aria-describedby="addon">
+								 <span class=" input-group-addon payMet__imgHold" id="addon"><b></b></span>
 							 </div>
 
 
-							 <label class="payMet__label" for="sel1">Card Currency</label>
-							 <select class="form-control" id="sel1" >
-							 	<option>eur</option>
-							 	<option>eur</option>
-							 	<option>eur</option>
+							 <label class="payMet__label" for="cardCur">Card Currency</label>
+							 <select class="form-control selectpicker" id="cardCur" name="cardCur" data-style="btn-default btn-lg ">
+							 	<option value="eur">eur</option>
+							 	<option value="eur">eur</option>
+							 	<option value="eur">eur</option>
 							 </select>
 							 <div class="row">
-							 	<div class="col-xs-6">
-									 <label class="payMet__label" for="sel2">Expiry Month</label>
-									 <select class="form-control col-xs-6" id="sel2"  >
-									 	<option>01</option>
-									 	<option>02</option>
-									 	<option>03</option>
-									 	<option>04</option>
-									 	<option>05</option>
-									 	<option>06</option>
-									 	<option>07</option>
-									 	<option>07</option>
-									 	<option>07</option>
-									 	<option>07</option>
-									 	<option>07</option>
-									 	<option>07</option>
-									 	<option>07</option>
-									 </select>	
+							 	<div class="col-xs-8  col-sm-6">
+							 		<label class="payMet__label" for="monthCard" >Expiry Month</label>
+							 		<select class="form-control selectpicker" id="monthCard" name="monthCard" data-style="btn-default btn-lg ">
+							 			<option value="01" >01</option>
+							 			<option value="01" >02</option>
+							 			<option value="02" >03</option>
+							 			<option value="03" >04</option>
+							 			<option value="04" >05</option>
+							 			<option value="05" >06</option>
+							 			<option value="06" >07</option>
+							 		</select>	
 							 	</div>
-							 	<div class="col-xs-6">
-									 <label class="payMet__label" for="sel2">Year</label>
-									 <select class="form-control col-xs-6" id="sel2"  >
-									 	<option>2014</option>
-									 	<option>2015</option>
-									 	<option>2016</option>
-									 	<option>2017</option>
-									 </select>	
+
+							 	<div class="col-xs-8 col-sm-6">
+							 		<label class="payMet__label" for="yearCard">Year</label>
+							 		<select class="form-control selectpicker" id="yearCard" name="yearCard" data-style="btn-default btn-lg "  >
+							 			<option value="2014">2014</option>
+							 			<option value="2015">2015</option>
+							 			<option value="2016">2016</option>
+							 			<option value="2017">2017</option>
+							 		</select>	
 							 	</div>
-							 	<div class="col-xs-6">
-							 		<label class="payMet__label" for="CardNum">Security Code</label>
+
+							 	<div class="col-xs-8 col-sm-6">
+							 		<label class="payMet__label" for="secCode">Security Code</label>
 							 		<div class="input-group">
-							 			<input type="text"   required class="form-control" id="SecCode" aria-describedby="addon">
-							 			<span class=" input-group-addon payMet__imgHold payMet__imgHold--secCode" id="SecCode"><p ></p></span>
+							 			<input type="text"   required class="form-control secCode__input" id="secCode" aria-describedby="addon2" name="SecCode">
+							 			<span class=" input-group-addon payMet__imgHold payMet__imgHold--secCode" id="addon2"><b ></b></span>
 							 		</div>
-							 	</div>
+							 	</div>	
 							 </div>
 
+							 <div class="row payMet__btnBlock">
+								<hr class="payMet__hr"> 
+							 	<div class="col-xs-6 col-sm-4">
+							 		<a class="btn btn-block btn-lg payMet__btn" href="#" role="button">BACK</a>
+							 	</div>
+							 	<div class="col-xs-6  col-sm-4 col-sm-offset-4">
+							 		<button type="submit" class="btn btn-block btn-lg btn-green ">NEXT STEP</button> 
+							 	</div>
+							</div>
 
-							 
-
-							 <!-- <button type="submit" class="btn btn-block btn-lg btn-green">SIGN UP</button> -->
-
-							 
 						</div>
 					</form>
-
 				</div>
 
 				<div class="col-xs-12 col-sm-6  col-md-5 col-md-offset-1">
-				<div class="depReq__greyWrap">
-					<p class="depReq__textGrey">Your reference # is your 12 - digit JIZGO A/C ID</p>
-					<hr>
-					<p class="depReq__text2">If your bank goesnot accomodate a refernce no.
-					</p>
-					<p class="depReq__text2">Please contact 
-						<a class="depReq__link" href="#">JIZGO Support</a>
-					</p>
-					<hr>
+				<div class="payMet__greyWrap ">
+						<p class="payMet__head2">Processing Fee:  <b>1.9%</b></p>
+
+					<div class="payMet__line payMet__line--first">
+						<p class="payMet__text ">You have remaining deposits for today</p>
+					</div>
+
+					<div class="payMet__line clearfix">
+						<p class="payMet__text payMet__text--left">Min. amount</p>
+						<p class="payMet__text payMet__text--right">19.50 GBP</p>
+					</div>
+
+					<div class="payMet__line clearfix">
+						<p class="payMet__text payMet__text--left">Max monthly amount</p>
+						<p class="payMet__text payMet__text--right">2,600,000.00 GBP</p>
+					</div>
+					
 				</div>
 				</div>
 			</div><!-- end row-->	

@@ -1,11 +1,24 @@
  $(function() {
+
  	if (  $(window).innerWidth()<768){
 		toggleMenu()
-		}
+		};
 
 
 	$('.accord').on('hidden.bs.collapse', toggleChevron);
 	$('.accord').on('shown.bs.collapse', toggleChevron);
+
+	$( "a[href ='#']" ).click(function( event ) {
+		  event.preventDefault();
+		});
+	
+	$('.btn-radio').click(function(e) {
+		$('.btn-radio').not(this).removeClass('active')
+		.siblings('input').prop('checked',false);
+		$(this).addClass('active')
+		.siblings('input').prop('checked',true);
+	});
+
 
  })
 

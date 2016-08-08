@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>dashboard history</title>
+	<title>dashboard settings</title>
 
 	
 
@@ -13,6 +13,7 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	
 </head>
@@ -139,7 +140,7 @@
 				<nav role="navigation" class="navbar navbar-default dash__nav">
 					<div class="navbar-header">
 					    <button class="btn btn-block btn-lg navbar-toggle dash__toggle " data-target="#navbarCollapse" data-toggle="collapse" type="button">
-					      History<i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+					      Settings<i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
 					    </button>
 					  </div>
 
@@ -148,120 +149,154 @@
 							<li><a  class="dash__navLink" href="dashboard.html">Dashboard</a></li>
 							<li><a  class="dash__navLink" href="#">Buy</a></li>
 							<li><a  class="dash__navLink" href="#">Sell</a></li>
-							<li><a  class="dash__navLink active" href="dashboard_history.html">History</a></li>
-							<li><a  class="dash__navLink" href="dashboard_settings.html">Settings</a></li>
+							<li><a  class="dash__navLink" href="dashboard_history.html">History</a></li>
+							<li><a  class="dash__navLink active" href="dashboard_settings.html">Settings</a></li>
 							<li><a  class="dash__navLink" href="#">Verification</a></li>
 							<li><a  class="dash__navLink" href="#">Support</a></li>
 						</ul> 
 					</div>   
 				</nav>
 		
-		<!-- section history dash board-->	
-				<section class="history">
-				<h2  class="history__name ">History</h2>
-					<div class="history__wrap">
-						<div class="container-fluid ">
-									<div class="row hisTables__wrap visible-sm visible-md visible-lg ">
-
-										 <div class="hisTables">
-											<table class="table"> 
-												<thead class="hisTables__head"> 
-													<tr> <th>TIME STAMP</th> <th>ORDER TYPE </th> <th>PRICE </th> <th>AMOUNT</th> <th>CRYPTOCOIN</th><th>STATUS</th></tr> 
-												</thead>
-												<tbody class="hisTables__body"> 
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
-												</tbody>
-											</table>
+		<!-- section settings dash board-->	
+				<section class="settings">
+					<div class="row">
+						<form action="#">
+							<div class="form-group form-group-lg">
+								<div class="col-xs-12">
+									<h2  class="settings__head ">Settings</h2>
+								</div>
+								<div class="col-xs-12 col-sm-6 ">
+									<label class="settings__label" for="setLang" >Language settings</label>
+									<select class="form-control selectpicker" id="setLang" name="setLang" data-style="btn-default btn-lg ">
+										<option value="01" >English</option>
+										<option value="02" >English</option>
+										<option value="03" >English</option>
+									</select>
+								</div>
+								<div class=" col-xs-12 col-sm-6 ">
+									<label class="settings__label" for="setCountry" >Country</label>
+									<select class="form-control selectpicker" id="setCountry" name="setCountry" data-style="btn-default btn-lg ">
+										<option value="01">japan</option>
+										<option value="02" >usa</option>
+										<option value="03" >china</option>
+									</select>
+								</div>
+								<div class=" col-xs-12 col-sm-6 ">
+									<p  class="settings__label">Select Currency</p>
+									<div class="row">
+										<div class="col-xs-4">
+											<button type="button" class="btn btn-block btn-lg btn-radio settings__btn active">GBP</button>
+											<input type="checkbox" name="SeleCurrency" value="GBP" class="hidden">
+										</div>
+										<div class="col-xs-4">
+											<button type="button" class="btn btn-block btn-lg btn-radio settings__btn">EUR</button>
+											<input type="checkbox" name="SeleCurrency" value="EUR" class="hidden">	
+										</div>
+										<div class="col-xs-4">
+											<button type="button" class="btn btn-block btn-lg btn-radio settings__btn">USD</button>
+											<input type="checkbox" name="SeleCurrency" value="USD" class="hidden">	
 										</div>
 									</div>
-									<div id="historySlide"  class="carousel slide historySlide visible-xs ">
-										<div class="row hisTables__wrap">	
-											<div class="carousel-inner">
-												<div class="item active hisTables">
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>11111111111</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>	
-												</div>						
-												<div class="item hisTables">
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>2222222222</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>
-												</div>
-												<div class="item hisTables">
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>333333333333</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>	
-												</div>
-												<div class="item hisTables">	
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>44444444444</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>
-												</div>
-												<div class="item hisTables">	
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>5555555555</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>
-												</div>
-											</div>
-										
-											<ol class="carousel-indicators historySlide__indicator">
-												<li data-target="#historySlide" data-slide-to="0" class="active"></li>
-												<li data-target="#historySlide" data-slide-to="1"></li>
-												<li data-target="#historySlide" data-slide-to="2"></li>
-												<li data-target="#historySlide" data-slide-to="3"></li>
-												<li data-target="#historySlide" data-slide-to="4"></li>
-											</ol>
 
-										</div>	
+									<h2  class="settings__head  settings__head--2">Account Security</h2>
+									<input type="email" class="form-control form__input" required  placeholder="Email" name="Email">
+									<input type="tel" pattern="(\+?\d[- .]*){7,13}"   class="form-control" required  placeholder="Mobile" name="Mobile">
+									<hr>
+									<div class="col-xs-5 col-xs-offset-7 col-sm-4 col-sm-offset-8">
+										<button type="submit" class="btn btn-block btn-lg btn-green ">SUBMIT</button> 
 									</div>
+								</div>
+							</div>			
+						</form>
+					</div>	
+				</section>
+
+		<!-- section history dash board-->	
+				<section class="history">
+				<h2  class="settings__head settings__head--2">Account Logs</h2>
+					<div class="history__wrap">
+						<div class="container-fluid ">
+								<div class="row hisTables__wrap visible-sm visible-md visible-lg ">
+									<div class="hisTables">
+										<table class="table"> 
+											<thead class="hisTables__head"> 
+												<tr> <th>TIME STAMP</th> <th>ACTION</th> <th>IP</th> </tr> 
+											</thead>
+											<tbody class="hisTables__body"> 
+												<tr> <td>2016-05-28 23:34:32</td> <td>You have logged in successfully</td> <td>192.168.0.1</td> </tr>
+												<tr> <td>2016-05-28 23:34:32</td> <td>You have logged in successfully</td> <td>192.168.0.1</td> </tr>
+												<tr> <td>2016-05-28 23:34:32</td> <td>You have logged in successfully</td> <td>192.168.0.1</td> </tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div id="historySlide"  class="carousel slide historySlide visible-xs ">
+									<div class="row hisTables__wrap">	
+										<div class="carousel-inner">
+											<div class="item active hisTables">
+												<table class="table"> 
+													<thead class="hisTables__body2"> 
+														<tr> <th>TIME STAMP</th> <td>2016-05-28 23:34:32</td> 
+														<tr> <th>ACTION</th> <td>You have logged in successfully</td> 
+														<tr> <th>IP</th> <td>192.168.0.1</td> 		
+													</thead>
+												</table>	
+											</div>						
+											<div class="item hisTables">
+												<table class="table"> 
+													<thead class="hisTables__body2"> 
+														<tr> <th>TIME STAMP</th> <td>2016-05-28 23:34:32</td> 
+														<tr> <th>ACTION</th> <td>You have logged in successfully</td> 
+														<tr> <th>IP</th> <td>192.168.0.1</td> 		 		
+													</thead>
+												</table>
+											</div>
+											<div class="item hisTables">
+												<table class="table"> 
+													<thead class="hisTables__body2"> 
+														<tr> <th>TIME STAMP</th> <td>2016-05-28 23:34:32</td> 
+														<tr> <th>ACTION</th> <td>You have logged in successfully</td> 
+														<tr> <th>IP</th> <td>192.168.0.1</td> 		 		
+													</thead>
+												</table>	
+											</div>
+											<div class="item hisTables">	
+												<table class="table"> 
+													<thead class="hisTables__body2"> 
+														<tr> <th>TIME STAMP</th> <td>2016-05-28 23:34:32</td> 
+														<tr> <th>ACTION</th> <td>You have logged in successfully</td> 
+														<tr> <th>IP</th> <td>192.168.0.1</td> 			
+													</thead>
+												</table>
+											</div>
+											<div class="item hisTables">	
+												<table class="table"> 
+													<thead class="hisTables__body2"> 
+														<tr> <th>TIME STAMP</th> <td>2016-05-28 23:34:32</td> 
+														<tr> <th>ACTION</th> <td>You have logged in successfully</td> 
+														<tr> <th>IP</th> <td>192.168.0.1</td> 		 		
+													</thead>
+												</table>
+											</div>
+										</div>
+										
+										<ol class="carousel-indicators historySlide__indicator">
+											<li data-target="#historySlide" data-slide-to="0" class="active"></li>
+											<li data-target="#historySlide" data-slide-to="1"></li>
+											<li data-target="#historySlide" data-slide-to="2"></li>
+											<li data-target="#historySlide" data-slide-to="3"></li>
+											<li data-target="#historySlide" data-slide-to="4"></li>
+										</ol>
+									</div>	
+								</div>
 						</div>	
 					</div>
 				</section>	
+
+
 			</div>
 		</div><!-- end container-fluid-->
 	</div>
-
 
 
 <!-- footer -->
