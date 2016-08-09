@@ -11,13 +11,21 @@
 	$( "a[href ='#']" ).click(function( event ) {
 		  event.preventDefault();
 		});
-	
+
 	$('.btn-radio').click(function(e) {
 		$('.btn-radio').not(this).removeClass('active')
 		.siblings('input').prop('checked',false);
 		$(this).addClass('active')
 		.siblings('input').prop('checked',true);
 	});
+	$('.btn-radio2').click(function(e) {
+		$('.btn-radio2').not(this).removeClass('active')
+		.siblings('input').prop('checked',false);
+		$(this).addClass('active')
+		.siblings('input').prop('checked',true);
+	})
+
+	
 
 
  })
