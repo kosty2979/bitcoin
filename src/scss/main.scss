@@ -750,8 +750,15 @@ body {
 	  		padding-top: 15px;
 	  		padding-bottom: 15px;
 	  		font-weight: bold;
-	  		color: $headColor;
+	  		color: $headColorHover;
 	  		font-size: 1.7em;
+	  		border: 1px solid transparent;
+	  		&:hover,
+		  	&:active{
+		  		color: $headColor;
+		  		text-decoration: none;
+		  		border: 1px solid rgb(59, 85, 102);
+		  	}
 		}
 		&__sell{
 			display: inline-block;
@@ -766,6 +773,11 @@ body {
 	  		font-weight: bold;
 	  		color: $headColor;
 	  		font-size: 1.7em;
+	  		&:hover,
+		  	&:active{
+		  		background-color: $greenHover;
+		  		text-decoration: none;
+		  	}
 		}
 
 	}
@@ -865,6 +877,13 @@ body {
 		  	font-weight: bold;
 		  	color: $headColor;
 		  	font-size: 1.5em;
+		  	&:hover,
+		  	&:active{
+		  		color: $headColor;
+		  		background-color: $greenHover;
+		  		text-decoration: none;
+		  	}
+		  	
 		}
 		&__sell{
 			display: inline-block;
@@ -879,6 +898,12 @@ body {
 		  	font-weight: bold;
 		  	color: white;
 		  	font-size: 1.5em;
+		  	&:hover,
+		  	&:active{
+		  		color: white;
+		  		background-color: $headColorHover;
+		  		text-decoration: none;
+		  	}
 		}
 		&__list{
 			text-align: center;
@@ -1795,12 +1820,14 @@ body {
 		}
 	}
 /*-- section buy dash board--*/
-
  .dashBuy{
  	&__wrap{
  		border-radius: 10px;
  		background-color: rgb(255, 255, 255);
- 		padding-bottom: 60px;
+ 		padding-bottom: 30px;
+ 		&--2{
+ 			margin-bottom: 25px;
+ 		}	
  	}
  	&__forP{
  		width:100%;
@@ -1808,7 +1835,7 @@ body {
  	&__input{
  		padding-left: 0 !important;
  		padding-right: 0 !important;
- 		text-align: center;
+ 		text-align: center !important;
  	}
  	&__label{
 		padding-top:30px;
@@ -1821,7 +1848,7 @@ body {
 			color: rgb(85, 85, 85);
 			padding-top: 10px;
   		}
-		}
+	}
  	&__btn{
  		border-style: solid;
 	 	border-width: 1px;
@@ -1849,11 +1876,13 @@ body {
 	 		color: $headColor;
 	 		background-color: rgba(255, 255, 255, 0);
 	 		box-shadow:         1px 0px 8px 0px $headColor;
-	 		}
-		}
+	 	}
+	}
 	&__spanBlock{
 		width:50%;
 		font-weight: 600;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
 		&--first{
 			background-color::  $headColor;
 			color: white;
@@ -1874,12 +1903,10 @@ body {
 			background-position: -49px 0px;
 			height: 36px;
 			margin-top: 3px;
-
 		}
 		&--lit{
 			background-position: 0px 0px;
 		}
-
  	}
  	&__imgHold{
 		padding-top:0;
@@ -1888,7 +1915,6 @@ body {
 		border-top-left-radius: 6px;	
 		border-bottom-left-radius: 6px;
 		border-right: 1px solid rgb(182, 182, 182);
-	
 		>b{
 			display: block;
 			margin: 2px 7px;
@@ -1952,13 +1978,87 @@ body {
 		}
 		&--paysef{
 			background-color: #e5e5e5;
-			>b{
-				
+			>b{	
 				background-position: -991px 0;
 			}	
 		}
 	}
+	&__links{
+		font-size: 1.6em;
+		color: #b6b6b6;
+  		font-weight: bold;
+  		line-height: 1.7;
+  		vertical-align: middle;
+	}
+	&__btnLink{
+		margin-bottom: 0;
+		margin-left: 15px;
+		margin-right: 15px;
+		font-size: 0.9em;
+		font-weight: bold;
+		background-color: #7ed320;
+		color: #3b5566;
+		border-radius: 5px;
+		&:hover{
+			background-color: $greenHover;
+			color: rgb(59, 85, 102);
+		}
+	}
+	&__link{
+		margin-right: 15px;
+		text-decoration: underline;
+		color: #7ed320;
+		&:hover{
+			color: $greenHover;
+		}
+	}
  }
+/*-- section  price chart--*/
+	.priceChart{
+		&__greyWrap{
+			border-radius: 10px;
+  			background-color: rgb(249, 249, 249);
+  			padding-bottom: 40px;
+  			margin-top: 25px;
+  			margin-bottom: 25px;
+  			padding-top: 40px;
+  			height:100%;
+		}
+		&__imgWrap{
+			//height:200px;
+			background-color: white;
+			border-radius: 10px;
+			margin: 25px 15px;
+			position: relative;
+			
+		}
+		&__img{
+			width:100%;
+		}
+		&__name{
+			font-size: 1.2em;
+  			color: rgb(28, 28, 28);
+  			line-height: 1.667;
+  			padding-left: 15px;
+		}
+		&__text{
+			font-size: 1.2em;
+			padding: 5px 15px ;
+			color: rgb(171, 171, 171);
+ 			line-height: 2.2;
+ 			&--left{
+				width:50%;
+				color: rgb(85, 85, 85);	
+ 			}
+ 			&--right{
+				width:50%;
+				border-left: 1px solid rgb(204, 204, 204);	
+ 			}
+		}
+		&__line{
+ 				border-bottom: 1px solid rgb(204, 204, 204);	
+ 			}
+	}
 
 
 @media (max-width: 380px) {
@@ -1985,6 +2085,10 @@ body {
 }
 
 @media (max-width: 460px) {
+	.dash__wrap{
+		padding:0;
+		margin-bottom: 0;
+	}
 	.currency{
 		padding-bottom:60px;
 		&__ctrlSlide{

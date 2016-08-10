@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>buy bitcoin</title>
+
+	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body>
+<!--header-> -->
+	<nav class="navbar navbar-default headNav">
+		<div class="container-fluid">
+
+			<a class="navbar-brand headNav__logo" href="index.html">
+				<img class="headNav__logoImg" src="image/Logo_header.png" alt="logo">
+			</a>
+
+			<ul class="nav navbar-nav hidden-xs ">
+				<li class="dropdown ">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img"></p>
+						English
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown">
+						<li><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+					</ul>
+				</li>
+				<li class="hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link" href="#">
+						<p class="headNav__img headNav__img--currency2"></p>
+						Bitcoins
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="dropdown ">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img headNav__img--currency"></p>
+						EUR
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown">
+						<li><a href = "#">GBP</a></li>
+						<li><a href = "#">EUR</a></li>
+						<li><a href = "#">USD</a></li>
+					</ul>
+				</li>	
+			</ul>
+
+			<ul class="nav   myNavRight">
+				<li>
+					<a id="menuLink" class="headNav__link headNav__link--2" href="#">
+						<i class="fa fa-bars fa-2x " aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="dropdown  hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img headNav__img--currency"></p>EUR
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown--right">
+						<li><a href = "#">GBP</a></li>
+						<li><a href = "#">EUR</a></li>
+						<li><a href = "#">USD</a></li>
+					</ul>
+				</li>
+				<li class="dropdown hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link dropdown-toggle" data-toggle = "dropdown" href="#">
+						<p class="headNav__img"></p>
+						English
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class = "dropdown-menu headNav__dropdown--right">
+						<li class="dropBlock"><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+						<li><a href = "#">English</a></li>
+					</ul>
+				</li>
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link" href="index.html">
+						<p class="headNav__img headNav__img--out"></p>
+						Sign Out
+					</a>
+				</li>
+				<li class="hidden-xs hidden-sm hidden-md hidden-lg">
+					<a class="headNav__link" href="dashboard.html">
+						<p class="headNav__img headNav__img--dash"></p>
+						Dashboard	
+					</a>
+				</li>
+				<li class="hidden-xs ">
+					<a class="headNav__link" href="sing_up.html">
+						<p class="headNav__img headNav__img--up"></p>
+						Sign Up
+					</a>
+				</li>
+				<li class="hidden-xs">
+					<a class="headNav__link" href="sing_in.html">
+						<p class="headNav__img headNav__img--in"></p>
+						Sign In
+					</a>
+				</li>
+			</ul>
+		</div><!-- /.container-fluid -->
+	</nav>
+
+<!-- aside nav menu -->	
+	<div id="menuContent" class="asideGag ">
+		<aside class="col-xs-9 navAside">
+			<ul class="navAside__list">
+			  <li class="navAside__item" ><a  id="closeMenu" class="navAside__link navAside__link--first" href="#"><span aria-hidden="true">&times;</span></a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="index.html">Home</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link1</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link2</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link3</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="#">link4</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_in.html"><p class="navAside__img "></p>Sign In</a></li>
+			  <li class="navAside__item" ><a class="navAside__link" href="sing_up.html"><p class="navAside__img navAside__img--up"></p>Sign Up</a></li>
+			  <li class="navAside__item" ></li>
+			</ul>
+		</aside>
+	</div>
+<!-- buy bitcoin -->
+	<section class="buyBitcoin">
+		<div class="container-fluid ">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
+					<h2 class="buyBitcoin__head">Buy Bitcoin</h2>
+					<p class="buyBitcoin__text">Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+					<div class="bitcoin__line text-center">
+						<p class="bitcoin__logo"></p>
+						<p class="bitcoin__name">Bitcoin:</p>
+						<p class="bitcoin__numb">427.03</p>
+						<p class="bitcoin__currency">EUR</p>
+					</div>
+				</div>
+			</div>	
+		</div><!-- end container-fluid-->
+	</section>
+<!-- section buy bitcoin-->
+	<div class="dashBuy__wrap dashBuy__wrap--2">
+		<div class="container-fluid ">
+			<div class="row ">
+				<div class="col-xs-12 col-md-7 baseBlock">
+					<form action="#">
+						<div class="form-group form-group-lg ">
+							<p  class="dashBuy__label">Select Currency</p>
+							<div class="row">
+								<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+									<button type="button" class="btn btn-block btn-lg btn-radio dashBuy__btn active"><span class="dashBuy__img "></span>Bitcoin</button>
+									<input type="checkbox" name="SeleCurrency" value="Bitcoin" class="hidden">
+								</div>
+								<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+									<button type="button" class="btn btn-block btn-lg btn-radio dashBuy__btn"><span class="dashBuy__img dashBuy__img--eth"></span>Etherum</button>
+									<input type="checkbox" name="SeleCurrency" value="Etherum" class="hidden">	
+								</div>
+								<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+									<button type="button" class="btn btn-block btn-lg btn-radio dashBuy__btn"><span class="dashBuy__img dashBuy__img--lit"></span>Litecoin</button>
+									<input type="checkbox" name="SeleCurrency" value="USD" class="hidden">	
+								</div>
+							</div>				
+						</div>	
+
+
+						<label class="dashBuy__label" for="setCountry" >Country</label>
+						<select class="form-control selectpicker" id="setCountry" name="setCountry" data-style="btn-default btn-lg ">
+							<option value="01">japan</option>
+							<option value="02" >usa</option>
+							<option value="03" >china</option>
+						</select>
+
+						<p  class="dashBuy__label">Choose a payment provider</p>
+						<p  class="dashBuy__label dashBuy__label--2">Credit card</p>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold pull-left"><b></b></span>Mastercard</button>
+								<input type="checkbox" name="SelectPayment" value="Mastercard" class="hidden">
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--visaCred pull-left"><b></b></span>Visa Credit</button>
+								<input type="checkbox" name="SelectPayment" value="VisaCredit" class="hidden">
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--visaDeb  pull-left"><b></b></span>Visa Debit</button>
+								<input type="checkbox" name="SelectPayment" value="VisaDebit" class="hidden">
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--visaElect pull-left"><b></b></span>Visa Electron</button>
+								<input type="checkbox" name="SelectPayment" value="VisaElectron" class="hidden">
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold pull-left"><b></b></span>Mastercard Debit</button>
+								<input type="checkbox" name="SelectPayment" value="MastercardDeb" class="hidden">
+							</div>
+						</div>
+
+						<p  class="dashBuy__label dashBuy__label--2">Credit card</p>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--localBank pull-left"><b></b></span>Local bank</button>
+								<input type="checkbox" name="SelectPayment" value="localBank" class="hidden">
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--intBank pull-left"><b></b></span>Internation bank</button>
+								<input type="checkbox" name="SelectPayment" value="intBank" class="hidden">
+							</div>
+						</div>
+
+						<p  class="dashBuy__label dashBuy__label--2">Other deposit options</p>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--Ukash pull-left"><b></b></span>Ukash</button>
+								<input type="checkbox" name="SelectPayment" value="Ukash" class="hidden">
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--boku pull-left"><b></b></span>Boku pay</button>
+								<input type="checkbox" name="SelectPayment" value="boku" class="hidden">
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--bitcoin pull-left"><b></b></span>Bitcoin</button>
+								<input type="checkbox" name="SelectPayment" value="bitcoin" class="hidden">
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--paysef pull-left"><b></b></span>Paysafe card</button>
+								<input type="checkbox" name="SelectPayment" value="paysef" class="hidden">
+							</div>
+						</div>
+
+						<p  class="dashBuy__label">Choose amount to spend or receive</p>
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+								<p  class="dashBuy__label dashBuy__label--2">Base price per Bitcoin</p>
+								<div class="input-group input-group-lg dashBuy__forP">
+			  						<span class="input-group-addon dashBuy__spanBlock dashBuy__spanBlock--first">GBP</span>
+			  						<p  class="form-control input-lg " >454.86</p>
+								</div>
+							</div>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+								<p  class="dashBuy__label dashBuy__label--2">Spend</p>
+								<div class="input-group input-group-lg">
+			  						<span class="input-group-addon dashBuy__spanBlock">GBP</span>
+			  						<input type="text" required class="form-control input-lg dashBuy__input" name="Spend" placeholder="99.95">
+								</div>
+							</div>
+							<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+								<p  class="dashBuy__label dashBuy__label--2">Receive</p>
+								<div class="input-group input-group-lg">
+			  						<span class="input-group-addon dashBuy__spanBlock">BTC</span>
+			  						<input type="text" required  class="form-control dashBuy__input input-lg" name="Receive" placeholder="0.2155">
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class=" text-right dashBuy__links">
+								<a href="sing_in.html" class="dashBuy__link">SING IN</a>  OR
+								<a href="sing_up.html" class="btn btn-default dashBuy__btnLink" role="button">SING UP</a> 
+							</div>
+						</div>
+					</form>
+				</div>
+	<!-- section  price chart-->				
+				<div class="col-xs-12 col-md-5 childBlock">
+					<div class="priceChart__greyWrap ">
+									
+						<p class="priceChart__name">Historic price chart</p>
+									
+						<div class="priceChart__imgWrap">
+							<img class="priceChart__img" src="image/historicPrice.png" alt="historicPrice">
+						</div>
+						<p class="priceChart__name">Cryptocoin Information</p>
+						<table class="table"> 			
+							<tbody > 
+								<tr> <td class="priceChart__text priceChart__text--left">Code:</td> <td class="priceChart__text priceChart__text--right">BTC</td> </tr>
+								<tr> <td class="priceChart__text priceChart__text--left">Category:</td> <td class="priceChart__text priceChart__text--right">Original Code</td> </tr>
+								<tr> <td class="priceChart__text priceChart__text--left">Launched:</td> <td class="priceChart__text priceChart__text--right">January 2009</td></tr>
+								<tr> <td class="priceChart__text priceChart__text--left">Distribution:</td> <td class="priceChart__text priceChart__text--right">Proof of Work</td> </tr>
+								<tr> <td class="priceChart__text priceChart__text--left">Algorithm:</td> <td class="priceChart__text priceChart__text--right">SHA256</td></tr>
+								<tr> <td class="priceChart__text priceChart__text--left">Block Time:</td> <td class="priceChart__text priceChart__text--right">10 Minutes</td> </tr>
+								<tr> <td class="priceChart__text priceChart__text--left">Quantity:</td> <td class="priceChart__text priceChart__text--right">~15,000,000 BTC</td> </tr>
+								<tr> <td class="priceChart__text priceChart__text--left">Key Features:</td> <td class="priceChart__text priceChart__text--right">Biggest User Base & Acceptance, Low Transaction Cost</td> </tr>
+								<tr> <td class="priceChart__text priceChart__text--left">Bitcoin Website:</td> <td class="priceChart__text priceChart__text--right">www.bitcoin.org</td> </tr>
+								<tr  class="priceChart__line"> <td class="priceChart__text priceChart__text--left">Block Time:</td> <td class="priceChart__text priceChart__text--right">10 Minutes</td> </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end dashBuy__wrap-->
+
+<!-- section about -->
+	<div class="about">
+		<div class="container-fluid">
+			<div class="row">
+				<div class=" col-sm-6 col-md-5   col-lg-4">
+	    				<form class="input-group about__form" action="#">
+	      					<input type="email" class="form-control input-lg about__input"  required  placeholder="Enter your email address">
+	      					<span class="input-group-btn">
+	        					<button class="btn btn-lg btn-default about__button" type="submit" >SUBSCRIBE</button>
+	      					</span>
+	    				</form>
+	 			 </div>
+	 			 <div class=" col-sm-6 col-md-5 col-md-offset-2 col-lg-offset-4 col-lg-4 about__socWrap">
+		 			 
+						<a class="about__soc" href="#"><i class="fa fa-facebook fa-3x " aria-hidden="true"></i></a>
+			 			<a class="about__soc" href="#"><i class="fa fa-twitter fa-3x " aria-hidden="true"></i></a>
+						<a class="about__soc" href="#"><i class="fa fa-linkedin fa-3x " aria-hidden="true"></i></a>
+						<a class="about__soc" href="#"><i class="fa fa-google-plus fa-3x " aria-hidden="true"></i></a>
+					
+				</div>
+			</div>
+			<div class="row  hidden-xs  about__line"></div>
+			<div class="row ">
+				 <div class="col-sm-6 col-md-5 col-lg-4 about__but">
+					<a class="about__buy" href="buy_bitcoin.html">BUY</a>
+					<a class="about__sell" href="sell_bitcoin.html">SELL</a>
+				</div>
+				<ul class="col-sm-6 col-md-5 col-md-offset-2 col-lg-offset-4 col-lg-4 about__list">
+					<li class="about__item"><a class="about__link" href="about_us.html">About Us</a> </li>
+					<li class="about__item"><a class="about__link" href="about_us.html#imprint">Imprint</a> </li>
+					<li class="about__item"><a class="about__link" href="terms.html">Terms and Conditions</a> </li>
+					<li class="about__item"><a class="about__link" href="contact_us.html">Contact us</a> </li>
+				</ul>					
+			</div>		
+		</div>
+	</div>			
+
+
+<!-- footer -->
+	<footer class="footerMin">
+		<div class="container-fluid">
+			<p class="text-center footerMin__text">© 2016 - Jigzo, All right reserved</p>
+		</div>
+	</footer>
+</body>
+</html>

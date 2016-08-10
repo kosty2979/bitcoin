@@ -23,10 +23,11 @@
 		.siblings('input').prop('checked',false);
 		$(this).addClass('active')
 		.siblings('input').prop('checked',true);
-	})
+	});
 
 	
-
+	setHeight();
+	
 
  })
 
@@ -73,3 +74,13 @@ function toggleMenu(){
 	});
 }
 
+function setHeight(){
+	if (  $(window).innerWidth()>990){
+		 var $baseBlock = $(".baseBlock");
+		 var $childBlock = $(".childBlock");
+		 var heightBlock = $($baseBlock).height() + 20;
+			$($childBlock).height(heightBlock );
+		}else{
+			return
+		}
+}

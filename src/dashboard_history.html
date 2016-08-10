@@ -18,7 +18,7 @@
 </head>
 <body>
 <!--header-> -->
-	<nav class="navbar navbar-default headNav" role="navigation">
+	<nav class="navbar navbar-default headNav">
 		<div class="container-fluid">
 
 			<a class="navbar-brand headNav__logo" href="index.html">
@@ -136,7 +136,7 @@
 	<div class="dash">
 		<div class="container-fluid ">
 			<div class="dash__wrap">
-				<nav role="navigation" class="navbar navbar-default dash__nav">
+				<nav class="navbar navbar-default dash__nav">
 					<div class="navbar-header">
 					    <button class="btn btn-block btn-lg navbar-toggle dash__toggle " data-target="#navbarCollapse" data-toggle="collapse" type="button">
 					      History<i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
@@ -147,7 +147,7 @@
 						<ul class="nav navbar-nav dash__navList">
 							<li><a  class="dash__navLink" href="dashboard.html">Dashboard</a></li>
 							<li><a  class="dash__navLink" href="dashboard_buy.html">Buy</a></li>
-							<li><a  class="dash__navLink" href="#">Sell</a></li>
+							<li><a  class="dash__navLink" href="dashboard_sell.html">Sell</a></li>
 							<li><a  class="dash__navLink active" href="dashboard_history.html">History</a></li>
 							<li><a  class="dash__navLink" href="dashboard_settings.html">Settings</a></li>
 							<li><a  class="dash__navLink" href="#">Verification</a></li>
@@ -161,100 +161,97 @@
 				<h2  class="history__name ">History</h2>
 					<div class="history__wrap">
 						<div class="container-fluid ">
-									<div class="row hisTables__wrap visible-sm visible-md visible-lg ">
-
-										 <div class="hisTables">
+							<div class="row hisTables__wrap visible-sm visible-md visible-lg ">
+								<div class="hisTables">
+									<table class="table"> 
+										<thead class="hisTables__head"> 
+											<tr> <th>TIME STAMP</th> <th>ORDER TYPE </th> <th>PRICE </th> <th>AMOUNT</th> <th>CRYPTOCOIN</th><th>STATUS</th></tr> 
+										</thead>
+										<tbody class="hisTables__body"> 
+											<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+											<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+											<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+											<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+											<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+											<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
+											<tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div id="historySlide"  class="carousel slide historySlide visible-xs ">
+								<div class="row hisTables__wrap">	
+									<div class="carousel-inner">
+										<div class="item active hisTables">
 											<table class="table"> 
-												<thead class="hisTables__head"> 
-													<tr> <th>TIME STAMP</th> <th>ORDER TYPE </th> <th>PRICE </th> <th>AMOUNT</th> <th>CRYPTOCOIN</th><th>STATUS</th></tr> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>11111111111</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
 												</thead>
-												<tbody class="hisTables__body"> 
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td>10.05.16</td> <td>851445</td> <td>88.96 EUR</td> <td>586</td> <td>bitcoin</td> <td>OK</td></tr>
-													<tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
-												</tbody>
+											</table>	
+										</div>						
+										<div class="item hisTables">
+											<table class="table"> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>2222222222</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
+												</thead>
+											</table>
+										</div>
+										<div class="item hisTables">
+											<table class="table"> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>333333333333</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
+												</thead>
+											</table>	
+										</div>
+										<div class="item hisTables">	
+											<table class="table"> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>44444444444</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
+												</thead>
+											</table>
+										</div>
+										<div class="item hisTables">	
+											<table class="table"> 
+												<thead class="hisTables__body2"> 
+													<tr> <th>TIME STAMP</th> <td>5555555555</td> 
+													<tr> <th>ORDER TYPE </th> <td>851445</td> 
+													<tr> <th>PRICE </th> <td>332 eur</td> 
+													<tr> <th>AMOUNT</th> <td>586</td> 
+													<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
+													<tr> <th>STATUS</th> <td>OK</td> 		
+												</thead>
 											</table>
 										</div>
 									</div>
-									<div id="historySlide"  class="carousel slide historySlide visible-xs ">
-										<div class="row hisTables__wrap">	
-											<div class="carousel-inner">
-												<div class="item active hisTables">
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>11111111111</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>	
-												</div>						
-												<div class="item hisTables">
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>2222222222</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>
-												</div>
-												<div class="item hisTables">
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>333333333333</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>	
-												</div>
-												<div class="item hisTables">	
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>44444444444</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>
-												</div>
-												<div class="item hisTables">	
-													<table class="table"> 
-														<thead class="hisTables__body2"> 
-															<tr> <th>TIME STAMP</th> <td>5555555555</td> 
-															<tr> <th>ORDER TYPE </th> <td>851445</td> 
-															<tr> <th>PRICE </th> <td>332 eur</td> 
-															<tr> <th>AMOUNT</th> <td>586</td> 
-															<tr> <th>CRYPTOCOIN</th> <td>bitcoin</td> 
-															<tr> <th>STATUS</th> <td>OK</td> 		
-														</thead>
-													</table>
-												</div>
-											</div>
-										
-											<ol class="carousel-indicators historySlide__indicator">
-												<li data-target="#historySlide" data-slide-to="0" class="active"></li>
-												<li data-target="#historySlide" data-slide-to="1"></li>
-												<li data-target="#historySlide" data-slide-to="2"></li>
-												<li data-target="#historySlide" data-slide-to="3"></li>
-												<li data-target="#historySlide" data-slide-to="4"></li>
-											</ol>
-
-										</div>	
-									</div>
+									<ol class="carousel-indicators historySlide__indicator">
+										<li data-target="#historySlide" data-slide-to="0" class="active"></li>
+										<li data-target="#historySlide" data-slide-to="1"></li>
+										<li data-target="#historySlide" data-slide-to="2"></li>
+										<li data-target="#historySlide" data-slide-to="3"></li>
+										<li data-target="#historySlide" data-slide-to="4"></li>
+									</ol>
+								</div>	
+							</div>
 						</div>	
 					</div>
 				</section>	
