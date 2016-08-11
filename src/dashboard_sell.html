@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>dashboard buy</title>
+	<title>dashboard sell</title>
 
 	
 
@@ -14,6 +14,7 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
 	<script type="text/javascript" src="js/script.js"></script>
 	
 </head>
@@ -117,7 +118,8 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 
-<!-- aside nav menu -->	
+<!-- aside nav menu -->
+	
 	<div id="menuContent" class="asideGag ">
 		<aside class="col-xs-9 navAside">
 			<ul class="navAside__list">
@@ -133,6 +135,7 @@
 			</ul>
 		</aside>
 	</div>
+
 <!-- dash board  -->
 	<div class="dash">
 		<div class="container-fluid ">
@@ -140,15 +143,15 @@
 				<nav class="navbar navbar-default dash__nav">
 					<div class="navbar-header">
 					    <button class="btn btn-block btn-lg navbar-toggle dash__toggle " data-target="#navbarCollapse" data-toggle="collapse" type="button">
-					      Buy<i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+					      Sell<i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
 					    </button>
 					  </div>
 
 					 <div id="navbarCollapse" class="collapse navbar-collapse">
 						<ul class="nav navbar-nav dash__navList">
 							<li><a  class="dash__navLink" href="dashboard.html">Dashboard</a></li>
-							<li><a  class="dash__navLink active" href="dashboard_buy.html">Buy</a></li>
-							<li><a  class="dash__navLink" href="dashboard_sell.html">Sell</a></li>
+							<li><a  class="dash__navLink " href="dashboard_buy.html">Buy</a></li>
+							<li><a  class="dash__navLink active" href="dashboard_sell.html">Sell</a></li>
 							<li><a  class="dash__navLink" href="dashboard_history.html">History</a></li>
 							<li><a  class="dash__navLink " href="dashboard_settings.html">Settings</a></li>
 							<li><a  class="dash__navLink" href="#">Verification</a></li>
@@ -209,56 +212,24 @@
 									<p  class="dashBuy__label dashBuy__label--2">Credit card</p>
 									<div class="row">
 										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold pull-left"><b></b></span>Mastercard</button>
-											<input type="checkbox" name="SelectPayment" value="Mastercard" class="hidden">
+											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold  dashBuy__imgHold--am pull-left"><b></b></span>Amazon</button>
+											<input type="checkbox" name="SelectPayment" value="Amazon" class="hidden">
 										</div>
 										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--visaCred pull-left"><b></b></span>Visa Credit</button>
-											<input type="checkbox" name="SelectPayment" value="VisaCredit" class="hidden">
+											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--skrill pull-left"><b></b></span>Skrill</button>
+											<input type="checkbox" name="SelectPayment" value="Skrill" class="hidden">
 										</div>
 										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--visaDeb  pull-left"><b></b></span>Visa Debit</button>
-											<input type="checkbox" name="SelectPayment" value="VisaDebit" class="hidden">
+											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--payPal  pull-left"><b></b></span>PayPal</button>
+											<input type="checkbox" name="SelectPayment" value="PayPal" class="hidden">
 										</div>
 										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--visaElect pull-left"><b></b></span>Visa Electron</button>
-											<input type="checkbox" name="SelectPayment" value="VisaElectron" class="hidden">
+											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--neteller pull-left"><b></b></span>Neteller</button>
+											<input type="checkbox" name="SelectPayment" value="Neteller" class="hidden">
 										</div>
 										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold pull-left"><b></b></span>Mastercard Debit</button>
-											<input type="checkbox" name="SelectPayment" value="MastercardDeb" class="hidden">
-										</div>
-									</div>
-
-									<p  class="dashBuy__label dashBuy__label--2">Credit card</p>
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--localBank pull-left"><b></b></span>Local bank</button>
-											<input type="checkbox" name="SelectPayment" value="localBank" class="hidden">
-										</div>
-										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--intBank pull-left"><b></b></span>Internation bank</button>
-											<input type="checkbox" name="SelectPayment" value="intBank" class="hidden">
-										</div>
-									</div>
-
-									<p  class="dashBuy__label dashBuy__label--2">Other deposit options</p>
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--Ukash pull-left"><b></b></span>Ukash</button>
-											<input type="checkbox" name="SelectPayment" value="Ukash" class="hidden">
-										</div>
-										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--boku pull-left"><b></b></span>Boku pay</button>
-											<input type="checkbox" name="SelectPayment" value="boku" class="hidden">
-										</div>
-										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--bitcoin pull-left"><b></b></span>Bitcoin</button>
-											<input type="checkbox" name="SelectPayment" value="bitcoin" class="hidden">
-										</div>
-										<div class="col-xs-12 col-sm-6">
-											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--paysef pull-left"><b></b></span>Paysafe card</button>
-											<input type="checkbox" name="SelectPayment" value="paysef" class="hidden">
+											<button type="button" class="btn btn-block btn-lg btn-radio2 dashBuy__btn"><span class="dashBuy__imgHold dashBuy__imgHold--sepa pull-left"><b></b></span>SEPA</button>
+											<input type="checkbox" name="SelectPayment" value="SEPA" class="hidden">
 										</div>
 									</div>
 
@@ -301,7 +272,7 @@
 									<p class="priceChart__name">Historic price chart</p>
 									
 									<div class="priceChart__imgWrap">
-										<img class="priceChart__img" src="image/historicPrice.png" alt="historicPrice">
+										<img class="priceChart__img" src="image/historicPrice.png" alt="historicPrice"> 
 									</div>
 									<p class="priceChart__name">Cryptocoin Information</p>
 									<table class="table"> 			
