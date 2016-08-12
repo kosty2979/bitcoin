@@ -4,6 +4,7 @@ var reload = browserSync.reload;
 
 var spritesmith = require("gulp.spritesmith");
 var imagemin = require('gulp-imagemin');
+var cache = require('gulp-cache');
 
 var rename = require("gulp-rename");
 var notify = require( 'gulp-notify' );
@@ -94,6 +95,13 @@ gulp.src('src/js/*.js')
 gulp.task('img', function () {  
 gulp.src('src/image/*.*')
     .pipe(imagemin(""))
+    .pipe(cache(imagemin({
+      progressive: true,
+      interlaced: true,
+      // don't remove IDs from SVGs, they are often used
+      // as hooks for embedding and styling
+      svgoPlugins: [{cleanupIDs: false}]
+})))
     .pipe(gulp.dest('dist/image'))
     .pipe(reload({stream: true}))
 });
