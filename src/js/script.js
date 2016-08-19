@@ -27,17 +27,10 @@
 	setHeight();
 	toggleMenu();
 
-	$('.selectpicker').selectpicker({ iconBase: 'glyphicon glyphicon-chevron-down'});
-
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    		$('.selectpicker').selectpicker('mobile');
-	}
-
-	$(window).resize(function() {
-		setHeight();
-		toggleMenu();
-	});
-
+		$(window).resize(function() {
+				setHeight();
+				toggleMenu();
+			});
  })
 
 function toggleChevron(e) {
